@@ -6,7 +6,7 @@ import {
   useMediaQuery,
   useTheme
 } from '@mui/material';
-import { PageContainer, theme } from '../PageContainer';
+import { PageContainer } from '../PageContainer';
 import { Logo } from '../Logo';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
