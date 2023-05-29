@@ -119,17 +119,17 @@ export const PageContainer = (props: any) => {
         onClose={toggleDrawer(false)}>
         <List>
           {[
-            'Home',
-            'Durgotsav 2023',
-            'Brochure',
-            'Registration',
-            'Contact',
-            'Donate',
-            'About Us'
-          ].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemText primary={text} />
+            { name: 'Home', link: '/usuc-website' },
+            { name: 'Durgotsav 2023', link: '/durgotsav2023' },
+            { name: 'Brochure', link: '/' },
+            { name: 'Registration', link: '/' },
+            { name: 'Contact', link: '/contact' },
+            { name: 'Donate', link: '/' },
+            { name: 'About Us', link: '/about' }
+          ].map((item, index) => (
+            <ListItem key={item.name} disablePadding>
+              <ListItemButton href={item.link}>
+                <ListItemText primary={item.name} />
               </ListItemButton>
             </ListItem>
           ))}
