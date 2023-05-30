@@ -12,6 +12,7 @@ import {
   createTheme
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import HomeIcon from '@mui/icons-material/Home';
 
 import { themeOptions } from '../Theme';
 import { useState } from 'react';
@@ -27,6 +28,13 @@ export const PageContainer = (props: any) => {
   const navigateTo = (path: String) => {
     // 👇️ navigate to /contacts
     navigate('/' + path);
+  };
+
+  const getIcon = (item: string) => {
+    switch (item) {
+      case 'Home':
+        return <HomeIcon />;
+    }
   };
 
   const toggleDrawer = (toggle: any) => (event: any) => {
@@ -140,6 +148,7 @@ export const PageContainer = (props: any) => {
                 onClick={() => {
                   navigateTo(item.link);
                 }}>
+                {getIcon(item.name)} &nbsp;
                 <ListItemText primary={item.name} />
               </ListItemButton>
             </ListItem>
