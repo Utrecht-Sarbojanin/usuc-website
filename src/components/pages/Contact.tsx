@@ -26,12 +26,13 @@ export const Contact = () => {
               boxShadow: 'none',
               [theme.breakpoints.up('lg')]: {
                 marginRight: '50px'
-              }
+              },
+              marginBottom: '10px'
             }}>
             <CardMedia>
               <img
                 src={require('../../static/utrecht_tower.png')}
-                alt="featured"
+                alt="contact"
               />
             </CardMedia>
           </Card>

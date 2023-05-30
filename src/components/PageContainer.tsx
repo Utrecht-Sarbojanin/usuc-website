@@ -13,6 +13,12 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeIcon from '@mui/icons-material/Home';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import EditNoteIcon from '@mui/icons-material/EditNote';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
 
 import { themeOptions } from '../Theme';
 import { useState } from 'react';
@@ -34,6 +40,18 @@ export const PageContainer = (props: any) => {
     switch (item) {
       case 'Home':
         return <HomeIcon />;
+      case 'Durgotsav 2023':
+        return <FavoriteIcon />;
+      case 'Brochure':
+        return <MenuBookIcon />;
+      case 'Registration':
+        return <EditNoteIcon />;
+      case 'Contact':
+        return <LocalPhoneIcon />;
+      case 'Donate':
+        return <ThumbUpIcon />;
+      case 'About Us':
+        return <Diversity3Icon />;
     }
   };
 
@@ -148,8 +166,8 @@ export const PageContainer = (props: any) => {
                 onClick={() => {
                   navigateTo(item.link);
                 }}>
-                {getIcon(item.name)} &nbsp;
-                <ListItemText primary={item.name} />
+                {getIcon(item.name)}
+                <ListItemText sx={{ marginLeft: '10px' }} primary={item.name} />
               </ListItemButton>
             </ListItem>
           ))}
