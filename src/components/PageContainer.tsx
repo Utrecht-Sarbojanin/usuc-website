@@ -15,11 +15,19 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import { themeOptions } from '../Theme';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const theme: Theme = createTheme(themeOptions);
 
 export const PageContainer = (props: any) => {
   const [open, isOpen] = useState(false);
+
+  const navigate = useNavigate();
+
+  const navigateTo = (path: String) => {
+    // 👇️ navigate to /contacts
+    navigate('/' + path);
+  };
 
   const toggleDrawer = (toggle: any) => (event: any) => {
     if (
@@ -119,16 +127,19 @@ export const PageContainer = (props: any) => {
         onClose={toggleDrawer(false)}>
         <List>
           {[
-            { name: 'Home', link: '/usuc-website' },
-            { name: 'Durgotsav 2023', link: '/durgotsav2023' },
+            { name: 'Home', link: 'usuc-website' },
+            { name: 'Durgotsav 2023', link: 'durgotsav2023' },
             { name: 'Brochure', link: '/' },
             { name: 'Registration', link: '/' },
-            { name: 'Contact', link: '/contact' },
-            { name: 'Donate', link: '/' },
-            { name: 'About Us', link: '/about' }
+            { name: 'Contact', link: 'contact' },
+            { name: 'Donate', link: '' },
+            { name: 'About Us', link: 'about' }
           ].map((item, index) => (
             <ListItem key={item.name} disablePadding>
-              <ListItemButton href={item.link}>
+              <ListItemButton
+                onClick={() => {
+                  navigateTo(item.link);
+                }}>
                 <ListItemText primary={item.name} />
               </ListItemButton>
             </ListItem>
