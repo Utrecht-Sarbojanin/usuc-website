@@ -1,6 +1,10 @@
 import {
+  Box,
   Button,
   Card,
+  CardActions,
+  CardContent,
+  CardHeader,
   CardMedia,
   Container,
   Grid,
@@ -18,23 +22,114 @@ import { Logo } from '../Logo';
 
 const theme: Theme = createTheme(themeOptions);
 
+const tiers = [
+  {
+    title: 'Our Sarbojanin Heritage',
+    price: '0',
+    description: ['The all embracing festivals of Bengal'],
+    buttonText: 'Read More',
+    buttonVariant: 'outlined'
+  },
+  {
+    title: 'Upcomimg Event',
+    subheader: 'Most popular',
+    price: '15',
+    description: ['Durgotsav (Durga Puja) 2023 ', 'October 20 - 24'],
+    buttonText: 'Read More',
+    buttonVariant: 'outlined'
+  },
+  {
+    title: 'Memories',
+    price: '30',
+    description: ['Sights and sounds of Utrecht Sarbojanin'],
+    buttonText: 'View',
+    buttonVariant: 'outlined'
+  }
+];
+
 export const Home = () => {
   return (
-    <Container
-      sx={{
-        [theme.breakpoints.down('lg')]: {
-          marginTop: '20px'
-        },
-        [theme.breakpoints.up('lg')]: {
-          marginTop: '35px'
-        }
-      }}
-      maxWidth="lg">
-      <Grid container spacing={5}>
-        <LeftColumn />
-        <RightColumn />
-      </Grid>
-    </Container>
+    <>
+      <Container
+        sx={{
+          [theme.breakpoints.down('lg')]: {
+            marginTop: '20px'
+          },
+          [theme.breakpoints.up('lg')]: {
+            marginTop: '35px'
+          }
+        }}
+        maxWidth="lg">
+        <Grid container spacing={5}>
+          <LeftColumn />
+          <RightColumn />
+        </Grid>
+      </Container>
+      <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
+        <Grid container spacing={5} alignItems="flex-end">
+          {tiers.map((tier) => (
+            // Enterprise card is full width at sm breakpoint
+            <Grid
+              item
+              key={tier.title}
+              xs={12}
+              sm={tier.title === 'Enterprise' ? 12 : 6}
+              md={4}>
+              <Card>
+                {/* <CardHeader
+                  title={tier.title}
+                  subheader={tier.subheader}
+                  titleTypographyProps={{ align: 'center' }}
+                  action={null}
+                  subheaderTypographyProps={{
+                    align: 'center'
+                  }}
+                  sx={{
+                    backgroundColor: (theme) =>
+                      theme.palette.mode === 'light'
+                        ? theme.palette.grey[200]
+                        : theme.palette.grey[700]
+                  }}
+                /> */}
+                <CardContent>
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'baseline',
+                      mb: 2
+                    }}>
+                    <Typography
+                      component="h5"
+                      variant="h5"
+                      align="center"
+                      color="text.primary">
+                      {tier.title}
+                    </Typography>
+                  </Box>
+                  {tier.description.map((line) => (
+                    <Typography
+                      component="p"
+                      variant="subtitle1"
+                      align="center"
+                      key={line}>
+                      {line}
+                    </Typography>
+                  ))}
+                </CardContent>
+                <CardActions>
+                  <Button
+                    fullWidth
+                    variant={tier.buttonVariant as 'outlined' | 'contained'}>
+                    {tier.buttonText}
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </>
   );
 };
 
@@ -119,7 +214,7 @@ const RightColumn = () => {
         </Typography>
       </Grid>
       <NavigationButtons />
-      <Grid sx={{ textAlign: 'center', marginTop: '90px' }} item xs={12}>
+      <Grid sx={{ textAlign: 'center', marginTop: '50px' }} item xs={12}>
         Follow us on social media
       </Grid>
       <Grid sx={{ textAlign: 'center' }} item xs={12}>
