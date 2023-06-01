@@ -4,7 +4,6 @@ import {
   Card,
   CardActions,
   CardContent,
-  CardHeader,
   CardMedia,
   Container,
   Grid,
@@ -26,7 +25,7 @@ const tiers = [
   {
     title: 'Our Sarbojanin Heritage',
     price: '0',
-    description: ['The all embracing festivals of Bengal'],
+    description: ['The all embracing cultural heritage of Bengal'],
     buttonText: 'Read More',
     buttonVariant: 'outlined'
   },
@@ -42,7 +41,7 @@ const tiers = [
     title: 'Memories',
     price: '30',
     description: ['Sights and sounds of Utrecht Sarbojanin'],
-    buttonText: 'View',
+    buttonText: 'View Gallery',
     buttonVariant: 'outlined'
   }
 ];
