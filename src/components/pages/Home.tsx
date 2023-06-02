@@ -213,7 +213,9 @@ const BottomCards = () => {
               {'Sarbojanin ['}
               <Link
                 sx={{ textDecoration: 'none', color: '#c0c0c0' }}
-                href="http://ipa-reader.xyz/?text=%CA%83arbo%C9%9Fonin">
+                href="http://ipa-reader.xyz/?text=%CA%83arbo%C9%9Fonin"
+                target="_blank"
+                rel="noopener">
                 ʃarboɟonin
               </Link>
               {'] →'}&nbsp;
