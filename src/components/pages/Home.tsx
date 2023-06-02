@@ -1,12 +1,13 @@
 import {
-  Box,
   Button,
   Card,
   CardActions,
   CardContent,
+  CardHeader,
   CardMedia,
   Container,
   Grid,
+  Link,
   Theme,
   Typography,
   createTheme
@@ -20,31 +21,6 @@ import { useNavigate } from 'react-router-dom';
 import { Logo } from '../Logo';
 
 const theme: Theme = createTheme(themeOptions);
-
-const tiers = [
-  {
-    title: 'Our Sarbojanin Heritage',
-    price: '0',
-    description: ['The all embracing cultural heritage of Bengal'],
-    buttonText: 'Read More',
-    buttonVariant: 'outlined'
-  },
-  {
-    title: 'Upcomimg Event',
-    subheader: 'Most popular',
-    price: '15',
-    description: ['Durgotsav (Durga Puja) 2023 ', 'October 20 - 24'],
-    buttonText: 'Read More',
-    buttonVariant: 'outlined'
-  },
-  {
-    title: 'Memories',
-    price: '30',
-    description: ['Sights and sounds of Utrecht Sarbojanin'],
-    buttonText: 'View Gallery',
-    buttonVariant: 'outlined'
-  }
-];
 
 export const Home = () => {
   return (
@@ -64,70 +40,7 @@ export const Home = () => {
           <RightColumn />
         </Grid>
       </Container>
-      <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
-        <Grid container spacing={5} alignItems="flex-end">
-          {tiers.map((tier) => (
-            // Enterprise card is full width at sm breakpoint
-            <Grid
-              item
-              key={tier.title}
-              xs={12}
-              sm={tier.title === 'Enterprise' ? 12 : 6}
-              md={4}>
-              <Card>
-                {/* <CardHeader
-                  title={tier.title}
-                  subheader={tier.subheader}
-                  titleTypographyProps={{ align: 'center' }}
-                  action={null}
-                  subheaderTypographyProps={{
-                    align: 'center'
-                  }}
-                  sx={{
-                    backgroundColor: (theme) =>
-                      theme.palette.mode === 'light'
-                        ? theme.palette.grey[200]
-                        : theme.palette.grey[700]
-                  }}
-                /> */}
-                <CardContent>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'baseline',
-                      mb: 2
-                    }}>
-                    <Typography
-                      component="h5"
-                      variant="h5"
-                      align="center"
-                      color="text.primary">
-                      {tier.title}
-                    </Typography>
-                  </Box>
-                  {tier.description.map((line) => (
-                    <Typography
-                      component="p"
-                      variant="subtitle1"
-                      align="center"
-                      key={line}>
-                      {line}
-                    </Typography>
-                  ))}
-                </CardContent>
-                <CardActions>
-                  <Button
-                    fullWidth
-                    variant={tier.buttonVariant as 'outlined' | 'contained'}>
-                    {tier.buttonText}
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Container>
+      <BottomCards />
     </>
   );
 };
@@ -287,5 +200,62 @@ const NavigationButtons = () => {
         </Button>
       </Grid>
     </Grid>
+  );
+};
+
+const BottomCards = () => {
+  return (
+    <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
+      <Grid container spacing={5} alignItems="flex-end">
+        <InfoCard title={'Our Sarbojanin Heritage'} buttonText="Read More">
+          <Line>
+            <Typography sx={{ display: 'inline-block' }}>
+              {'Sarbojanin ['}
+              <Link
+                sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+                href="http://ipa-reader.xyz/?text=%CA%83arbo%C9%9Fonin">
+                ʃarboɟonin
+              </Link>
+              {'] →'}&nbsp;
+            </Typography>
+            <Typography sx={{ fontStyle: 'italic', display: 'inline-block' }}>
+              {' for all people'}
+            </Typography>
+          </Line>
+          <Line>{'The all embracing cultural heritage of Bengal'}</Line>
+        </InfoCard>
+        <InfoCard title={'Upcomimg Event'} buttonText="Read More">
+          <Line>{'Durgotsav (Durga Puja) 2023'}</Line>
+          <Line>{'October 20 - 24'}</Line>
+        </InfoCard>
+        <InfoCard title={'Memories'} buttonText="View Gallery">
+          <Line>{'Sights and sounds of Utrecht Sarbojanin'}</Line>
+        </InfoCard>
+      </Grid>
+    </Container>
+  );
+};
+
+const InfoCard = (props: any) => {
+  return (
+    <Grid item xs={12} md={4}>
+      <Card>
+        <CardHeader title={props.title} sx={{ textAlign: 'center' }} />
+        <CardContent sx={{ height: '100px' }}>{props.children}</CardContent>
+        <CardActions>
+          <Button fullWidth variant={'outlined'}>
+            {props.buttonText}
+          </Button>
+        </CardActions>
+      </Card>
+    </Grid>
+  );
+};
+
+const Line = (props: any) => {
+  return (
+    <Typography component="p" variant="subtitle1" align="center">
+      {props.children}
+    </Typography>
   );
 };
