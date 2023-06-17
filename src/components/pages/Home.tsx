@@ -130,10 +130,41 @@ const RightColumn = () => {
         Follow us on social media
       </Grid>
       <Grid sx={{ textAlign: 'center' }} item xs={12}>
-        <InstagramIcon sx={{ margin: '15px' }} fontSize="large" />
-        <TwitterIcon sx={{ margin: '15px' }} fontSize="large" />
-        <FacebookIcon sx={{ margin: '15px' }} fontSize="large" />
-        <EmailIcon sx={{ margin: '15px' }} fontSize="large" />
+        <Typography display={'inline'}>
+          <Link
+            href="https://www.instagram.com/utrechtsarbojanin"
+            target="_blank"
+            underline="none">
+            <InstagramIcon sx={{ margin: '15px' }} fontSize="large" />
+          </Link>
+        </Typography>
+
+        <Typography display={'inline'}>
+          <Link
+            href="https://twitter.com/suc_utrecht"
+            target="_blank"
+            underline="none">
+            <TwitterIcon sx={{ margin: '15px' }} fontSize="large" />
+          </Link>
+        </Typography>
+
+        <Typography display={'inline'}>
+          <Link
+            href="https://www.facebook.com/profile.php?id=100087395963544"
+            target="_blank"
+            underline="none">
+            <FacebookIcon sx={{ margin: '15px' }} fontSize="large" />
+          </Link>
+        </Typography>
+
+        <Typography display={'inline'}>
+          <Link
+            href="mailto:info@utrechtsarbojanin.nl"
+            target="_blank"
+            underline="none">
+            <EmailIcon sx={{ margin: '15px' }} fontSize="large" />
+          </Link>
+        </Typography>
       </Grid>
     </Grid>
   );
