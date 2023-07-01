@@ -49,7 +49,7 @@ export const Donation = () => {
           variant="body1"
           align="justify"
           component="p">
-          <b>Important!</b> : Write the below details in the description of
+          <b>Important</b> : Write the below details in the description of
           payment message
           <br />
         </Typography>
@@ -58,7 +58,7 @@ export const Donation = () => {
             fontSize: '16px'
           }}
           variant="body1"
-          align="justify"
+          align="left"
           color={'secondary'}
           component="p">
           “Donated By: [your full name] [email id] [phone number]”
@@ -71,7 +71,7 @@ export const Donation = () => {
             fontSize: '18px'
           }}
           variant="body1"
-          align="justify"
+          align="left"
           component="p">
           Thank you for your generosity and unwavering support. Together, let's
           create unforgettable memories and celebrate our rich cultural
@@ -84,7 +84,7 @@ export const Donation = () => {
             fontSize: '16px'
           }}
           variant="body1"
-          align="justify"
+          align="left"
           component="p">
           If you have any questions, please do not hesitate to contact us via
           email at: <b>info@utrechtsarbojanin.nl</b>

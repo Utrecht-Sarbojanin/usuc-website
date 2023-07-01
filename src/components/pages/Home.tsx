@@ -1,4 +1,5 @@
 import {
+  Badge,
   Button,
   Card,
   CardActions,
@@ -245,7 +246,10 @@ const BottomCards = () => {
         <InfoCard
           title={'Our Sarbojanin Heritage'}
           buttonText="Read More"
-          target="sarbojanin">
+          target="sarbojanin"
+          buttons={[
+            { text: 'Read More', target: 'sarbojanin', type: 'outlined' }
+          ]}>
           <Line>
             <Typography sx={{ display: 'inline-block' }}>
               {'Sarbojanin ['}
@@ -265,7 +269,12 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Upcomimg Event'}
+          title={'Upcoming Event'}
+          specialNote={'new'}
+          buttons={[
+            { text: 'Read More', target: 'durgotsav2023', type: 'outlined' },
+            { text: 'Register', target: '', type: 'secondary' }
+          ]}
           buttonText="Read More"
           target="durgotsav2023">
           <Line>{'Durgotsav (Durga Puja) 2023'}</Line>
@@ -274,7 +283,10 @@ const BottomCards = () => {
         <InfoCard
           title={'Memories'}
           buttonText="View Gallery"
-          target="memories">
+          target="memories"
+          buttons={[
+            { text: 'View Gallery', target: 'memories', type: 'outlined' }
+          ]}>
           <Line>{'Sights and sounds of Utrecht Sarbojanin'}</Line>
         </InfoCard>
       </Grid>
@@ -283,30 +295,65 @@ const BottomCards = () => {
 };
 
 const InfoCard = (props: any) => {
+  const target: string = props.target || '';
+
+  const badgeStyle = {
+    '& .MuiBadge-badge': {
+      fontSize: '14px',
+      fontWeight: 'bold'
+    }
+  };
+
+  return (
+    <Grid item xs={12} md={4}>
+      <Card>
+        <CardHeader
+          title={
+            props.specialNote ? (
+              <Badge sx={badgeStyle} color="secondary" badgeContent={'new'}>
+                {props.title}
+              </Badge>
+            ) : (
+              props.title
+            )
+          }
+          sx={{ textAlign: 'center' }}
+        />
+        <CardContent sx={{ height: '100px' }}>{props.children}</CardContent>
+        <CardActions>
+          <Buttons buttons={props.buttons} />
+        </CardActions>
+      </Card>
+    </Grid>
+  );
+};
+
+const Buttons = (props: any) => {
   const navigate = useNavigate();
   const navigateTo = (path: string) => {
     navigate('/' + path);
   };
 
-  const target: string = props.target || '';
-
-  return (
-    <Grid item xs={12} md={4}>
-      <Card>
-        <CardHeader title={props.title} sx={{ textAlign: 'center' }} />
-        <CardContent sx={{ height: '100px' }}>{props.children}</CardContent>
-        <CardActions>
-          <Button
-            fullWidth
-            variant={'outlined'}
-            onClick={() => {
-              navigateTo(target);
-            }}>
-            {props.buttonText}
-          </Button>
-        </CardActions>
-      </Card>
-    </Grid>
+  return props.buttons.map(
+    (element: { target: string; text: string; type: string }) => {
+      const color =
+        element.type === 'outlined'
+          ? 'inherit'
+          : element.type === 'primary'
+          ? 'primary'
+          : 'secondary';
+      return (
+        <Button
+          fullWidth
+          variant={element.type === 'outlined' ? 'outlined' : 'contained'}
+          color={color}
+          onClick={() => {
+            navigateTo(element.target);
+          }}>
+          {element.text}
+        </Button>
+      );
+    }
   );
 };
 
