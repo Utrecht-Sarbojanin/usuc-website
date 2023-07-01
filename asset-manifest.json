@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/usuc-website/static/css/main.026b1dc5.css",
-    "main.js": "/usuc-website/static/js/main.f982d526.js",
+    "main.js": "/usuc-website/static/js/main.d2b5e005.js",
     "static/js/787.a85767d5.chunk.js": "/usuc-website/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/usuc-website/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/maa_durga.jpg": "/usuc-website/static/media/maa_durga.22fc283d767a83b1c9d3.jpg",
@@ -10,11 +10,11 @@
     "static/media/usuc_logo.png": "/usuc-website/static/media/usuc_logo.92d24d8f271bf1663cff.png",
     "index.html": "/usuc-website/index.html",
     "main.026b1dc5.css.map": "/usuc-website/static/css/main.026b1dc5.css.map",
-    "main.f982d526.js.map": "/usuc-website/static/js/main.f982d526.js.map",
+    "main.d2b5e005.js.map": "/usuc-website/static/js/main.d2b5e005.js.map",
     "787.a85767d5.chunk.js.map": "/usuc-website/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.f982d526.js"
+    "static/js/main.d2b5e005.js"
   ]
 }
