@@ -172,7 +172,6 @@ const RightColumn = () => {
 
 const NavigationButtons = () => {
   const navigate = useNavigate();
-
   const navigateTo = (path: String) => {
     // 👇️ navigate to /contacts
     navigate('/' + path);
@@ -243,7 +242,10 @@ const BottomCards = () => {
   return (
     <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
       <Grid container spacing={5} alignItems="flex-end">
-        <InfoCard title={'Our Sarbojanin Heritage'} buttonText="Read More">
+        <InfoCard
+          title={'Our Sarbojanin Heritage'}
+          buttonText="Read More"
+          target="sarbojanin">
           <Line>
             <Typography sx={{ display: 'inline-block' }}>
               {'Sarbojanin ['}
@@ -262,11 +264,17 @@ const BottomCards = () => {
           </Line>
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
-        <InfoCard title={'Upcomimg Event'} buttonText="Read More">
+        <InfoCard
+          title={'Upcomimg Event'}
+          buttonText="Read More"
+          target="durgotsav2023">
           <Line>{'Durgotsav (Durga Puja) 2023'}</Line>
           <Line>{'October 20 - 24'}</Line>
         </InfoCard>
-        <InfoCard title={'Memories'} buttonText="View Gallery">
+        <InfoCard
+          title={'Memories'}
+          buttonText="View Gallery"
+          target="memories">
           <Line>{'Sights and sounds of Utrecht Sarbojanin'}</Line>
         </InfoCard>
       </Grid>
@@ -275,13 +283,25 @@ const BottomCards = () => {
 };
 
 const InfoCard = (props: any) => {
+  const navigate = useNavigate();
+  const navigateTo = (path: string) => {
+    navigate('/' + path);
+  };
+
+  const target: string = props.target || '';
+
   return (
     <Grid item xs={12} md={4}>
       <Card>
         <CardHeader title={props.title} sx={{ textAlign: 'center' }} />
         <CardContent sx={{ height: '100px' }}>{props.children}</CardContent>
         <CardActions>
-          <Button fullWidth variant={'outlined'}>
+          <Button
+            fullWidth
+            variant={'outlined'}
+            onClick={() => {
+              navigateTo(target);
+            }}>
             {props.buttonText}
           </Button>
         </CardActions>

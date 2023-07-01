@@ -14,10 +14,9 @@ export const Sarbojanin = () => {
           align="justify"
           color={'secondary'}
           component="p">
-          Durga Puja was declared an Intangible Cultural Heritage of Humanity by
-          UNESCO, in 2021. "Durga Puja is a religious festival that has become a
-          cultural and secular event. It has also become a space for social and
-          artistic activities."
+          Durga Puja is the most awaited festival of Bengal (present day West
+          Bengal of India). The very first grand Durga Puja in recorded history
+          is said to have been celebrated in the late 1500s.
           <br />
           <br />
         </Typography>
@@ -28,20 +27,31 @@ export const Sarbojanin = () => {
           variant="body1"
           align="justify"
           component="p">
-          Utrecht Sarbojanin Durgotsav 20 - 24 October 2023 is a 5-day long
-          festival and we aim to deliver a spectacular event and the biggest
-          Indian International Festival in the Netherlands. This is an excellent
-          opportunity for people to experience the rich multicultural heritage
-          of India and also to engage in cultural exchanges with people from
-          different communities. You can download the brochure from here.
+          It was initially celebrated by affluent families of Bengal as a show
+          of their social prestige, political power and wealth.
           <br />
-          <br /> The event will take place in a beautifully articulated venue
-          with one of the biggest Durga Idols in mainland Europe. The event will
-          be full of various cultural activities from different communities.{' '}
+          <br /> Later in the 1790's, the idea of “Barowari Puja” was conceived
+          in the Hooghly district of Bengal to break away from this tradition of
+          exclusivity of these affluent families. It was said that a group of
+          twelve friends together started a Puja where the community can come
+          together and pray to the Goddess Durga, creating the first community
+          Durga Puja in Bengal, from where the format also gets its name -
+          “Baro” for twelve and “yari” for friends. Since then, the enthusiasm
+          and participation of common people increased the numbers of Barowari
+          Durga Puja throughout the state of Bengal. But, it took almost 120
+          years for Barwari Puja to reach Calcutta (present day Kolkata), the
+          then seat of culture and Freedom movement in British ruled India.
           <br />
           <br />
-          We are cordially inviting everyone to join us and celebrate this great
-          Indian International Festival - Utrecht Sarbojanin Durgotsav 2023.
+          But in the late 1920's the community Durga Puja evolved into an all
+          embracing Sarbojanin Durga Puja. The word Sarbojanin comprises two
+          words - “Sarbo”, meaning, “For all” and “Jan” means “people”. So
+          therefore the word Sarbojanin means “For all the people''. Late
+          Atindranath Bose introduced the first "Sarbojanin" Durga Puja in
+          Bengal as well as India in which anybody, irrespective of religion,
+          caste and creed could participate in the auspicious occasion. This
+          puja was organized to build a feeling of unity and brotherhood among
+          all.
         </Typography>
       </Grid>
     </PageContainer>
