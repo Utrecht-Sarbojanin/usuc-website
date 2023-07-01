@@ -216,7 +216,12 @@ const NavigationButtons = () => {
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
-        <Button fullWidth variant="contained">
+        <Button
+          fullWidth
+          variant="contained"
+          onClick={() => {
+            navigateTo('donate');
+          }}>
           Donate
         </Button>
       </Grid>

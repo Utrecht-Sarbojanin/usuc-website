@@ -11,6 +11,8 @@ import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Contact } from './components/pages/Contact';
 import { Durgotsav2023 } from './components/pages/Durgotsav2023';
+import { Sarbojanin } from './components/pages/Sarbojanin';
+import { Donation } from './components/pages/Donation';
 
 const theme: Theme = createTheme(themeOptions);
 
@@ -26,6 +28,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/durgotsav2023" element={<Durgotsav2023 />} />
+          <Route path="/sarbojanin" element={<Sarbojanin />} />
+          <Route path="/donate" element={<Donation />} />
         </Routes>
       </BrowserRouter>
       <Footer />

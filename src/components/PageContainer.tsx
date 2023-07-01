@@ -158,7 +158,7 @@ export const PageContainer = (props: any) => {
             { name: 'Brochure', link: '/' },
             { name: 'Registration', link: '/' },
             { name: 'Contact', link: 'contact' },
-            { name: 'Donate', link: '' },
+            { name: 'Donate', link: 'donate' },
             { name: 'About Us', link: 'about' }
           ].map((item, index) => (
             <ListItem key={item.name} disablePadding>
