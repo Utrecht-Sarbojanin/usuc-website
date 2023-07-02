@@ -6,7 +6,7 @@ import { CssBaseline } from '@mui/material';
 import { Theme } from '@emotion/react';
 import { Footer } from './components/Footer';
 import { DummyPage } from './components/pages/DummyPage';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Contact } from './components/pages/Contact';
@@ -22,7 +22,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dummy" element={<DummyPage />} />
@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/donate" element={<Donation />} />
           <Route path="/memories" element={<Memories />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </ThemeProvider>
   );
