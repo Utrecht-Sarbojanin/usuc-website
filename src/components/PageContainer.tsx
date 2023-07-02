@@ -32,7 +32,6 @@ export const PageContainer = (props: any) => {
   const navigate = useNavigate();
 
   const navigateTo = (path: String) => {
-    // 👇️ navigate to /contacts
     navigate('/' + path);
   };
 
@@ -66,6 +65,36 @@ export const PageContainer = (props: any) => {
 
     isOpen(toggle);
   };
+
+  const MenuListItem = (props: any) => {
+    return (
+      <ListItem key={props.item.name} disablePadding>
+        {props.item.name === 'Brochure' ? (
+          <ListItemButton
+            href="https://drive.google.com/file/d/1cRMWrnlp7L6tYN-5HQhtxb7P6AINi0Gm/view?usp=sharing"
+            target="_blank">
+            {getIcon(props.item.name)}
+            <ListItemText
+              sx={{ marginLeft: '10px' }}
+              primary={props.item.name}
+            />
+          </ListItemButton>
+        ) : (
+          <ListItemButton
+            onClick={() => {
+              navigateTo(props.item.link);
+            }}>
+            {getIcon(props.item.name)}
+            <ListItemText
+              sx={{ marginLeft: '10px' }}
+              primary={props.item.name}
+            />
+          </ListItemButton>
+        )}
+      </ListItem>
+    );
+  };
+
   return (
     <>
       <Container
@@ -118,6 +147,7 @@ export const PageContainer = (props: any) => {
           width: '220px',
           flexShrink: 0,
           '& .MuiDrawer-paper': {
+            paddingTop: '20px',
             width: '220px',
             boxSizing: 'border-box'
           }
@@ -135,15 +165,7 @@ export const PageContainer = (props: any) => {
             { name: 'Donate', link: 'donate' },
             { name: 'About Us', link: 'about' }
           ].map((item, index) => (
-            <ListItem key={item.name} disablePadding>
-              <ListItemButton
-                onClick={() => {
-                  navigateTo(item.link);
-                }}>
-                {getIcon(item.name)}
-                <ListItemText sx={{ marginLeft: '10px' }} primary={item.name} />
-              </ListItemButton>
-            </ListItem>
+            <MenuListItem item={item} />
           ))}
         </List>
       </Drawer>

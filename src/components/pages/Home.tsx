@@ -196,7 +196,11 @@ const NavigationButtons = () => {
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
-        <Button fullWidth variant="contained">
+        <Button
+          fullWidth
+          variant="contained"
+          href="https://drive.google.com/file/d/1cRMWrnlp7L6tYN-5HQhtxb7P6AINi0Gm/view?usp=sharing"
+          target="_blank">
           Brochure
         </Button>
       </Grid>
