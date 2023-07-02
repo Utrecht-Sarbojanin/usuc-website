@@ -93,11 +93,11 @@ export const Durgotsav2023 = () => {
           align="justify"
           component="p">
           Utrecht Sarbojanin Durgotsav 20 - 24 October 2023 is a 5-day long
-          festival and we aim to deliver a spectacular event and the biggest
-          Indian International Festival in the Netherlands. This is an excellent
-          opportunity for people to experience the rich multicultural heritage
-          of India and also to engage in cultural exchanges with people from
-          different communities. You can download the brochure from here.
+          festival and we aim to deliver a spectacular event and one of the
+          biggest Indian International Festivals in the Netherlands. This is an
+          excellent opportunity for people to experience the rich multicultural
+          heritage of India and also to engage in cultural exchanges with people
+          from different communities.
           <br />
           <br /> The event will take place in a beautifully articulated venue
           with one of the biggest Durga Idols in mainland Europe. The event will

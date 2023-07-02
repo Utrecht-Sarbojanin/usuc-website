@@ -105,35 +105,9 @@ export const PageContainer = (props: any) => {
                 </IconButton>
                 {props.title}
               </Typography>
-              {/* <Grid item xs={8}>
-              <Typography
-                sx={{
-                  fontSize: '1.5em',
-                  marginTop: '20px',
-                  letterSpacing: '1.9px',
-                  marginBottom: '20px'
-                }}
-                component="h1"
-                variant="h2"
-                align="left"
-                color="text.primary"
-                gutterBottom>
-                {props.title}
-              </Typography>
-            </Grid> */}
-              {/* <Grid sx={{ textAlign: 'right', paddingTop: '10px' }} item xs={4}>
-              <IconButton
-                size="large"
-                edge="start"
-                color="secondary"
-                aria-label="menu"
-                sx={{ padding: 0 }}>
-                <MenuIcon sx={{ fontSize: '1.2em' }} />
-              </IconButton>
-            </Grid> */}
             </Grid>
 
-            <Grid sx={{ minHeight: '70vh' }} container direction="row" xs={12}>
+            <Grid sx={{ minHeight: '60vh' }} container direction="row" xs={12}>
               {props.children}
             </Grid>
           </Grid>
@@ -156,7 +130,7 @@ export const PageContainer = (props: any) => {
             { name: 'Home', link: 'usuc-website' },
             { name: 'Durgotsav 2023', link: 'durgotsav2023' },
             { name: 'Brochure', link: '/' },
-            { name: 'Registration', link: '/' },
+            { name: 'Registration', link: 'register' },
             { name: 'Contact', link: 'contact' },
             { name: 'Donate', link: 'donate' },
             { name: 'About Us', link: 'about' }

@@ -201,7 +201,12 @@ const NavigationButtons = () => {
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
-        <Button fullWidth variant="contained">
+        <Button
+          fullWidth
+          variant="contained"
+          onClick={() => {
+            navigateTo('register');
+          }}>
           Registration
         </Button>
       </Grid>
@@ -273,7 +278,7 @@ const BottomCards = () => {
           specialNote={'new'}
           buttons={[
             { text: 'Read More', target: 'durgotsav2023', type: 'outlined' },
-            { text: 'Register', target: '', type: 'secondary' }
+            { text: 'Register', target: 'register', type: 'secondary' }
           ]}
           buttonText="Read More"
           target="durgotsav2023">
