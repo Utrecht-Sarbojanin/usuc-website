@@ -157,7 +157,7 @@ export const PageContainer = (props: any) => {
         onClose={toggleDrawer(false)}>
         <List>
           {[
-            { name: 'Home', link: 'usuc-website' },
+            { name: 'Home', link: '/' },
             { name: 'Durgotsav 2023', link: 'durgotsav2023' },
             { name: 'Brochure', link: '/' },
             { name: 'Registration', link: 'register' },

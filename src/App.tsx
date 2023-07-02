@@ -24,7 +24,7 @@ const App = () => {
       <CssBaseline />
       <BrowserRouter>
         <Routes>
-          <Route path="/usuc-website" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/dummy" element={<DummyPage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />

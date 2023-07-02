@@ -14,8 +14,8 @@ export const Registration = () => {
           color={'secondary'}
           component="p">
           The registrations for Utrecht Sarbojanin Durgotsav 2023 (Durga Puja)
-          have not yet started. Please keep an watch on this space for further
-          updates. They will be opening shortly.
+          have not yet started. Please watch this space for further updates.
+          They will open shortly.
           <br />
           <br />
         </Typography>
