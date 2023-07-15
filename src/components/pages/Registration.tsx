@@ -42,7 +42,7 @@ export const Registration = () => {
           variant="contained"
           href="https://bunq.me/StichtingUtrechtSarbojaninUtsavCommittee0"
           target="_blank">
-          Make a donation securedly
+          Make a donation securely
         </Button>
 
         <Typography
