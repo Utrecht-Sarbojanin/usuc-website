@@ -63,7 +63,7 @@ export const Donation = () => {
           component="p">
           “Donated By: [your full name] [email id] [phone number]”
           <br />
-          e.g. “Donated By: Vincent V G (v.vangogh@musea.nl) +31611863612”
+          e.g. “Donated By: Vincent V G (v.vangogh@musea.nl) +31612345678”
         </Typography>
         <Typography
           sx={{
