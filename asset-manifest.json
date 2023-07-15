@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.3583dcb1.js",
+    "main.js": "/static/js/main.f21454f7.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/maa_durga.jpg": "/static/media/maa_durga.22fc283d767a83b1c9d3.jpg",
@@ -10,11 +10,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.92d24d8f271bf1663cff.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.3583dcb1.js.map": "/static/js/main.3583dcb1.js.map",
+    "main.f21454f7.js.map": "/static/js/main.f21454f7.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.3583dcb1.js"
+    "static/js/main.f21454f7.js"
   ]
 }
