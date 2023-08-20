@@ -1,20 +1,36 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.f21454f7.js",
+    "main.js": "/static/js/main.c6fe0d6f.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
+    "static/media/ashtami_dinner.png": "/static/media/ashtami_dinner.1edead71df31d317e22e.png",
+    "static/media/nabami_lunch.png": "/static/media/nabami_lunch.6934523bba5bd9cad87b.png",
+    "static/media/nabami_dinner.png": "/static/media/nabami_dinner.c60980b94904618c35a8.png",
+    "static/media/saptami_lunch.png": "/static/media/saptami_lunch.7adddcaeffaf07868196.png",
+    "static/media/dashami_lunch.png": "/static/media/dashami_lunch.7b3df5a805462b8cd0fb.png",
+    "static/media/saptami_dinner.png": "/static/media/saptami_dinner.39507135035564348f7c.png",
+    "static/media/dashami_dinner.png": "/static/media/dashami_dinner.b86ddb32411ddc1c6c58.png",
+    "static/media/ashtami_lunch.png": "/static/media/ashtami_lunch.1485f4d344d85d683d1d.png",
+    "static/media/shashthi_dinner.png": "/static/media/shashthi_dinner.fd3399774010525b08a4.png",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/maa_durga.jpg": "/static/media/maa_durga.22fc283d767a83b1c9d3.jpg",
+    "static/media/cov_weekend.jpg": "/static/media/cov_weekend.f9a3441189a65075a3f3.jpg",
+    "static/media/cov_dashami.jpg": "/static/media/cov_dashami.e0aad9485e0b10190612.jpg",
+    "static/media/cov_ashtami.jpg": "/static/media/cov_ashtami.4c49e51af36163207add.jpg",
+    "static/media/cov_shashthi.jpg": "/static/media/cov_shashthi.6aa4e97a449a58d5696a.jpg",
+    "static/media/cov_saptami.jpg": "/static/media/cov_saptami.a610d87b8d38e91c8abc.jpg",
+    "static/media/cov_nabami.jpg": "/static/media/cov_nabami.48814afcce803f260fb7.jpg",
+    "static/media/cov_full_event.jpg": "/static/media/cov_full_event.4ce3c56ddd333cfe8607.jpg",
     "static/media/sindur.jpg": "/static/media/sindur.1e3cdbbf2736dbcefc39.jpg",
     "static/media/maa_durga_bw.jpg": "/static/media/maa_durga_bw.a6e9a4277742486aaf5b.jpg",
     "static/media/usuc_logo.png": "/static/media/usuc_logo.92d24d8f271bf1663cff.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.f21454f7.js.map": "/static/js/main.f21454f7.js.map",
+    "main.c6fe0d6f.js.map": "/static/js/main.c6fe0d6f.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.f21454f7.js"
+    "static/js/main.c6fe0d6f.js"
   ]
 }
