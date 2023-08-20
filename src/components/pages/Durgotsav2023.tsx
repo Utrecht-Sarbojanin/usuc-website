@@ -1,4 +1,11 @@
-import { Grid, Typography, Card, CardMedia, CardContent } from '@mui/material';
+import {
+  Grid,
+  Typography,
+  Card,
+  CardMedia,
+  CardContent,
+  Link
+} from '@mui/material';
 import { PageContainer, theme } from '../PageContainer';
 import { ImageCredit } from '../ImageCredit';
 
@@ -106,6 +113,25 @@ export const Durgotsav2023 = () => {
           <br />
           We are cordially inviting everyone to join us and celebrate this great
           Indian International Festival - Utrecht Sarbojanin Durgotsav 2023.
+          <br />
+          <br />
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="justify"
+          color={'secondary'}
+          component="p">
+          <b>
+            Registration and ticketing are open now: Click{' '}
+            <Link
+              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+              href="/#/register">
+              here
+            </Link>
+          </b>
         </Typography>
       </Grid>
     </PageContainer>

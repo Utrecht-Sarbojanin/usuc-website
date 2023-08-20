@@ -278,8 +278,8 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Upcoming Event'}
-          specialNote={'new'}
+          title={'Registration is Now Open'}
+          specialTitle={true}
           buttons={[
             { text: 'Read More', target: 'durgotsav2023', type: 'outlined' },
             { text: 'Register', target: 'register', type: 'secondary' }
@@ -306,6 +306,13 @@ const BottomCards = () => {
 const InfoCard = (props: any) => {
   const target: string = props.target || '';
 
+  const titleColor =
+    props.specialTitle === true
+      ? theme.palette.secondary.main
+      : theme.palette.primary.main;
+
+  console.log(titleColor);
+
   const badgeStyle = {
     '& .MuiBadge-badge': {
       fontSize: '14px',
@@ -317,6 +324,7 @@ const InfoCard = (props: any) => {
     <Grid item xs={12} md={4}>
       <Card>
         <CardHeader
+          sx={{ textAlign: 'center', color: `${titleColor}` }}
           title={
             props.specialNote ? (
               <Badge sx={badgeStyle} color="secondary" badgeContent={'new'}>
@@ -326,7 +334,6 @@ const InfoCard = (props: any) => {
               props.title
             )
           }
-          sx={{ textAlign: 'center' }}
         />
         <CardContent sx={{ height: '100px' }}>{props.children}</CardContent>
         <CardActions>
