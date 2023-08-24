@@ -52,8 +52,20 @@ export const Registration = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>Date:</b> 20-24 Octoberober, 2023 <br /> <b>Venue:</b> Steenovenweg
-          5, 3532 AE, Utrecht, Netherlands
+          <b>Date:</b> 20-24 October, 2023 <br /> <b>Venue:</b> Steenovenweg 5,
+          3532 AE, Utrecht, Netherlands
+          <br />
+          <br />
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          component="p">
+          (To view the food menu of each day, click on the 'See Menu' button on
+          each pass type)
           <br />
           <br />
         </Typography>
