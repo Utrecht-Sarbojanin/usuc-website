@@ -311,8 +311,6 @@ const InfoCard = (props: any) => {
       ? theme.palette.secondary.main
       : theme.palette.primary.main;
 
-  console.log(titleColor);
-
   const badgeStyle = {
     '& .MuiBadge-badge': {
       fontSize: '14px',
