@@ -290,13 +290,17 @@ const BottomCards = () => {
           <Line>{'October 20 - 24'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Memories'}
-          buttonText="View Gallery"
-          target="memories"
+          title={'Puja Nirghonto'}
+          buttonText="View Schedule"
+          target="event-schedule"
           buttons={[
-            { text: 'View Gallery', target: 'memories', type: 'outlined' }
+            {
+              text: 'View Schedule',
+              target: 'event-schedule',
+              type: 'outlined'
+            }
           ]}>
-          <Line>{'Sights and sounds of Utrecht Sarbojanin'}</Line>
+          <Line>{'Detailed Schedule of Durga Puja 2023'}</Line>
         </InfoCard>
       </Grid>
     </Container>

@@ -13,7 +13,7 @@ import { Contact } from './components/pages/Contact';
 import { Durgotsav2023 } from './components/pages/Durgotsav2023';
 import { Sarbojanin } from './components/pages/Sarbojanin';
 import { Donation } from './components/pages/Donation';
-import { Memories } from './components/pages/Memories';
+import { Event } from './components/pages/Event';
 import { Registration } from './components/pages/Registration';
 
 const theme: Theme = createTheme(themeOptions);
@@ -33,7 +33,7 @@ const App = () => {
           <Route path="/sarbojanin" element={<Sarbojanin />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/donate" element={<Donation />} />
-          <Route path="/memories" element={<Memories />} />
+          <Route path="/event-schedule" element={<Event />} />
         </Routes>
       </HashRouter>
       <Footer />
