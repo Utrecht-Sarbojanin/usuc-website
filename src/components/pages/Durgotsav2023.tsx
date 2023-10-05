@@ -121,11 +121,28 @@ export const Durgotsav2023 = () => {
             fontSize: '18px'
           }}
           variant="body1"
-          align="justify"
+          align="center"
           color={'secondary'}
           component="p">
           <b>
-            Registration and ticketing are open now: Click{' '}
+            For detailed schedule of Durga Puja 2023 : Click{' '}
+            <Link
+              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+              href="/#/event-schedule">
+              here
+            </Link>
+          </b>
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'secondary'}
+          component="p">
+          <b>
+            Registration and ticketing are open now : Click{' '}
             <Link
               sx={{ textDecoration: 'none', color: '#c0c0c0' }}
               href="/#/register">

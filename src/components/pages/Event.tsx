@@ -104,7 +104,7 @@ export const Event = () => {
           <br />
           <br />
           <b>
-            * For all other event passes goto{' '}
+            * For all other event passes go to{' '}
             <Link
               sx={{ textDecoration: 'none', color: '#c0c0c0' }}
               href="/#/register">
