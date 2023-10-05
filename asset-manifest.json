@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.cd89296d.js",
+    "main.js": "/static/js/main.53241313.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/nabami_dinner.png": "/static/media/nabami_dinner.f873945896a08c9a746c.png",
     "static/media/shashthi_dinner.png": "/static/media/shashthi_dinner.ef407b340bb07b169acc.png",
@@ -26,11 +26,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.92d24d8f271bf1663cff.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.cd89296d.js.map": "/static/js/main.cd89296d.js.map",
+    "main.53241313.js.map": "/static/js/main.53241313.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.cd89296d.js"
+    "static/js/main.53241313.js"
   ]
 }
