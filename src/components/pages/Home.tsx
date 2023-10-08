@@ -42,6 +42,20 @@ export const Home = () => {
         </Grid>
       </Container>
       <BottomCards />
+      <Container maxWidth="lg">
+        <Grid sx={{ marginTop: '30px', marginBottom: '30px' }} item xs={12}>
+          <Typography
+            sx={{
+              fontSize: '18px'
+            }}
+            variant="body1"
+            align="center"
+            color={'secondary'}
+            component="p">
+            **Free registration for Devi Darshan & Pushpanjali will open soon.
+          </Typography>
+        </Grid>
+      </Container>
     </>
   );
 };
@@ -278,7 +292,7 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Registration is Now Open'}
+          title={'Registration is Now Open**'}
           specialTitle={true}
           buttons={[
             { text: 'Read More', target: 'durgotsav2023', type: 'outlined' },
