@@ -4,6 +4,6 @@ export interface Ticket {
   type: string;
   title: string;
   date: string;
-  menu: Menu;
+  menu?: Menu;
   link: string;
 }

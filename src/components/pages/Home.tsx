@@ -52,7 +52,8 @@ export const Home = () => {
             align="center"
             color={'secondary'}
             component="p">
-            **Free registration for Devi Darshan & Pushpanjali will open soon.
+            **Free registration for Devi Darshan & Pushpanjali is open now.
+            Passes are limited. Hurry Up!
           </Typography>
         </Grid>
       </Container>

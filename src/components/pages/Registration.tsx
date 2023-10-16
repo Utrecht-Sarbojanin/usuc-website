@@ -166,6 +166,12 @@ const ticketList: Ticket[] = [
       menuImages: ['dashami_lunch.png', 'dashami_dinner.png']
     },
     link: 'https://usuc.yapsody.com/event/book/781093/31566441'
+  },
+  {
+    type: 'free',
+    title: 'Free Pass (Limited) For Devi Darshan',
+    date: '20-24 October, 2023',
+    link: 'https://buytickets.at/utrechtsarbojaninutsavcommittee/1037862'
   }
 ];
 
@@ -215,16 +221,20 @@ const TicketCard = (props: any) => {
           {ticket.date} */}
         </CardContent>
         <CardActions>
-          <Button
-            sx={{ marginLeft: '5px', marginRight: '5px' }}
-            fullWidth
-            variant={'outlined'}
-            color={'inherit'}
-            onClick={() => {
-              props.openMenuDialog(ticket);
-            }}>
-            See Menu
-          </Button>
+          {ticket.menu === undefined ? (
+            ''
+          ) : (
+            <Button
+              sx={{ marginLeft: '5px', marginRight: '5px' }}
+              fullWidth
+              variant={'outlined'}
+              color={'inherit'}
+              onClick={() => {
+                props.openMenuDialog(ticket);
+              }}>
+              See Menu
+            </Button>
+          )}
           <Button
             sx={{ marginLeft: '5px', marginRight: '5px' }}
             fullWidth

@@ -25,7 +25,9 @@ export const MenuDialog = (props: any) => {
       onClose={props.handleClose}
       aria-labelledby="scroll-dialog-title"
       aria-describedby="scroll-dialog-description">
-      <DialogTitle id="scroll-dialog-title">{ticket.menu.title}</DialogTitle>
+      <DialogTitle id="scroll-dialog-title">
+        {ticket.menu !== undefined ? ticket.menu.title : ''}
+      </DialogTitle>
       <DialogContent
         dividers={true}
         sx={{
@@ -45,15 +47,17 @@ export const MenuDialog = (props: any) => {
           }
         }}>
         <ImageList variant="masonry" cols={1}>
-          {ticket.menu.menuImages.map((item, index) => (
-            <ImageListItem sx={{ margin: '10px' }} key={item}>
-              <img
-                src={require(`../static/menus/${item}`)}
-                loading="lazy"
-                alt={`menu_${ticket.type}_${index}`}
-              />
-            </ImageListItem>
-          ))}
+          {ticket.menu === undefined
+            ? ''
+            : ticket.menu.menuImages.map((item, index) => (
+                <ImageListItem sx={{ margin: '10px' }} key={item}>
+                  <img
+                    src={require(`../static/menus/${item}`)}
+                    loading="lazy"
+                    alt={`menu_${ticket.type}_${index}`}
+                  />
+                </ImageListItem>
+              ))}
         </ImageList>
       </DialogContent>
       <DialogActions>
