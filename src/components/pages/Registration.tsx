@@ -172,6 +172,16 @@ const ticketList: Ticket[] = [
     title: 'Free Pass (Limited) For Devi Darshan',
     date: '20-24 October, 2023',
     link: 'https://buytickets.at/utrechtsarbojaninutsavcommittee/1037862'
+  },
+  {
+    type: 'dandiya',
+    title: 'Dandiya Night',
+    date: '23 October, 2023',
+    menu: {
+      title: 'Dandiya Dinner Menu',
+      menuImages: ['nabami_dinner.png']
+    },
+    link: 'https://usuc.yapsody.com/event/book/781091/31566439'
   }
 ];
 
