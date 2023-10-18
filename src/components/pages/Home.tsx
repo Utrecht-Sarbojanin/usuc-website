@@ -293,7 +293,7 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Registration is Now Open**'}
+          title={'Registration is Open**'}
           specialTitle={true}
           buttons={[
             { text: 'Read More', target: 'durgotsav2023', type: 'outlined' },
