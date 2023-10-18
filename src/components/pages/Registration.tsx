@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardMedia,
   Grid,
+  Link,
   Typography
 } from '@mui/material';
 import { PageContainer } from '../PageContainer';
@@ -71,6 +72,27 @@ export const Registration = () => {
         </Typography>
       </Grid>
       <Tickets openMenuDialog={openMenuDialog} />
+      <Grid item xs={15}>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'secondary'}
+          component="p">
+          <br />
+          <br />
+          <b>
+            For detailed schedule of Durga Puja 2023 : Click{' '}
+            <Link
+              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+              href="/#/event-schedule">
+              here
+            </Link>
+          </b>
+        </Typography>
+      </Grid>
       <MenuDialog
         open={menuDialogOpen}
         handleClose={handleMenuDialogClose}

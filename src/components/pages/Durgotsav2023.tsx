@@ -124,6 +124,19 @@ export const Durgotsav2023 = () => {
           align="center"
           color={'secondary'}
           component="p">
+          <b>Venue:</b> <br />
+          Steenovenweg 5, 3532 AE, Utrecht, Netherlands
+          <br />
+          <br />
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'secondary'}
+          component="p">
           <b>
             For detailed schedule of Durga Puja 2023 : Click{' '}
             <Link

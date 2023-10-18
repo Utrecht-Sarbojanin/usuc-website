@@ -89,6 +89,20 @@ const eventsSchedule: USUCEvent[] = [
 export const Event = () => {
   return (
     <PageContainer title="Durga Puja 2023 Schedule">
+      <Grid item xs={15}>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'secondary'}
+          component="p">
+          <b>Venue:</b> Steenovenweg 5, 3532 AE, Utrecht, Netherlands
+          <br />
+          <br />
+        </Typography>
+      </Grid>
       <Grid item xs={12}>
         <DaywiseEvents />
       </Grid>
@@ -98,7 +112,7 @@ export const Event = () => {
             fontSize: '18px'
           }}
           variant="body1"
-          align="justify"
+          align="center"
           color={'secondary'}
           component="p">
           <br />
