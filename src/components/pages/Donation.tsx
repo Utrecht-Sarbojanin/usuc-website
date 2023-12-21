@@ -13,8 +13,8 @@ export const Donation = () => {
           align="justify"
           color={'secondary'}
           component="p">
-          As we continue to prepare for the Utrecht Sarbojanin Durgotsav 2023,
-          we kindly request your support in making this event a grand success.
+          As we continue to prepare for future events, we kindly request your
+          support in making them grand successes.
           <br />
           <br />
         </Typography>
@@ -26,9 +26,10 @@ export const Donation = () => {
           align="justify"
           component="p">
           Your contributions play a vital role in bringing the vibrant spirit of
-          Durga Puja to life in the city of Utrecht. Every donation, no matter
-          the size, makes a significant impact on our festivities. To make a
-          donation, please use the secure payment link provided below.
+          the various cultural events to life in the city of Utrecht. Every
+          donation, no matter the amount, makes a significant impact on our
+          festivities. To make a donation, please use the secure payment link
+          provided below.
         </Typography>
 
         <Button

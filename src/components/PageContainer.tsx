@@ -19,6 +19,7 @@ import EditNoteIcon from '@mui/icons-material/EditNote';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
+import CollectionsIcon from '@mui/icons-material/Collections';
 
 import { themeOptions } from '../Theme';
 import { useState } from 'react';
@@ -45,6 +46,8 @@ export const PageContainer = (props: any) => {
         return <MenuBookIcon />;
       case 'Registration':
         return <EditNoteIcon />;
+      case 'Gallery':
+        return <CollectionsIcon />;
       case 'Contact':
         return <LocalPhoneIcon />;
       case 'Donate':
@@ -160,7 +163,8 @@ export const PageContainer = (props: any) => {
             { name: 'Home', link: '' },
             { name: 'Durgotsav 2023', link: 'durgotsav2023' },
             { name: 'Brochure', link: '' },
-            { name: 'Registration', link: 'register' },
+            { name: 'Gallery', link: 'gallery' },
+            // { name: 'Registration', link: 'register' },
             { name: 'Contact', link: 'contact' },
             { name: 'Donate', link: 'donate' },
             { name: 'About Us', link: 'about' }

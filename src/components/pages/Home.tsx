@@ -42,21 +42,6 @@ export const Home = () => {
         </Grid>
       </Container>
       <BottomCards />
-      <Container maxWidth="lg">
-        <Grid sx={{ marginTop: '30px', marginBottom: '30px' }} item xs={12}>
-          <Typography
-            sx={{
-              fontSize: '18px'
-            }}
-            variant="body1"
-            align="center"
-            color={'secondary'}
-            component="p">
-            **Free registration for Devi Darshan & Pushpanjali is open now.
-            Passes are limited. Hurry Up!
-          </Typography>
-        </Grid>
-      </Container>
     </>
   );
 };
@@ -105,10 +90,10 @@ const LeftColumn = () => {
           sx={{
             background: theme.palette.background.default,
             boxShadow: 'none',
-            mt: '40px'
+            mt: '20px'
           }}>
           <CardMedia>
-            <img src={require('../../static/maa_durga.jpg')} alt="featured" />
+            <img src={require('../../static/cover_home.jpg')} alt="featured" />
           </CardMedia>
         </Card>
       </Grid>
@@ -128,7 +113,7 @@ const RightColumn = () => {
       xs={12}
       lg={4}>
       <Logo />
-      <Grid sx={{ marginBottom: '30px' }} item xs={12}>
+      <Grid sx={{ marginBottom: '50px' }} item xs={12}>
         <Typography
           sx={{
             fontSize: '18px'
@@ -142,7 +127,7 @@ const RightColumn = () => {
         </Typography>
       </Grid>
       <NavigationButtons />
-      <Grid sx={{ textAlign: 'center', marginTop: '50px' }} item xs={12}>
+      <Grid sx={{ textAlign: 'center', marginTop: '60px' }} item xs={12}>
         Follow us on social media
       </Grid>
       <Grid sx={{ textAlign: 'center' }} item xs={12}>
@@ -219,16 +204,7 @@ const NavigationButtons = () => {
           Brochure
         </Button>
       </Grid>
-      <Grid sx={{ padding: '10px' }} item xs={6}>
-        <Button
-          fullWidth
-          variant="contained"
-          onClick={() => {
-            navigateTo('register');
-          }}>
-          Registration
-        </Button>
-      </Grid>
+
       <Grid sx={{ padding: '10px' }} item xs={6}>
         <Button
           fullWidth
@@ -293,11 +269,10 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Registration is Open**'}
+          title={'Recent Event'}
           specialTitle={true}
           buttons={[
-            { text: 'Read More', target: 'durgotsav2023', type: 'outlined' },
-            { text: 'Register', target: 'register', type: 'secondary' }
+            { text: 'Read More', target: 'durgotsav2023', type: 'outlined' }
           ]}
           buttonText="Read More"
           target="durgotsav2023">
@@ -305,17 +280,17 @@ const BottomCards = () => {
           <Line>{'October 20 - 24'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Puja Nirghonto'}
-          buttonText="View Schedule"
+          title={'Moments'}
+          buttonText="View Gallery"
           target="event-schedule"
           buttons={[
             {
-              text: 'View Schedule',
-              target: 'event-schedule',
+              text: 'View Gallery',
+              target: 'gallery',
               type: 'outlined'
             }
           ]}>
-          <Line>{'Detailed Schedule of Durga Puja 2023'}</Line>
+          <Line>{'Sight & Sounds of Utrecht Sarbojanin'}</Line>
         </InfoCard>
       </Grid>
     </Container>

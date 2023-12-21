@@ -99,69 +99,17 @@ export const Durgotsav2023 = () => {
           variant="body1"
           align="justify"
           component="p">
-          Utrecht Sarbojanin Durgotsav 20 - 24 October 2023 is a 5-day long
-          festival and we aim to deliver a spectacular event and one of the
-          biggest Indian International Festivals in the Netherlands. This is an
+          Utrecht Sarbojanin Durgotsav 20 - 24 October 2023 was a 5-day long
+          festival and we aimed to deliver a spectacular event and one of the
+          biggest Indian International Festivals in the Netherlands. This was an
           excellent opportunity for people to experience the rich multicultural
           heritage of India and also to engage in cultural exchanges with people
           from different communities.
           <br />
-          <br /> The event will take place in a beautifully articulated venue
-          with one of the biggest Durga Idols in mainland Europe. The event will
-          be full of various cultural activities from different communities.{' '}
+          <br /> The event took place in a beautifully articulated venue with
+          one of the biggest Durga Idols in mainland Europe. The event was full
+          of various cultural activities from different communities. <br />
           <br />
-          <br />
-          We are cordially inviting everyone to join us and celebrate this great
-          Indian International Festival - Utrecht Sarbojanin Durgotsav 2023.
-          <br />
-          <br />
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: '18px'
-          }}
-          variant="body1"
-          align="center"
-          color={'secondary'}
-          component="p">
-          <b>Venue:</b> <br />
-          Steenovenweg 5, 3532 AE, Utrecht, Netherlands
-          <br />
-          <br />
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: '18px'
-          }}
-          variant="body1"
-          align="center"
-          color={'secondary'}
-          component="p">
-          <b>
-            For detailed schedule of Durga Puja 2023 : Click{' '}
-            <Link
-              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
-              href="/#/event-schedule">
-              here
-            </Link>
-          </b>
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: '18px'
-          }}
-          variant="body1"
-          align="center"
-          color={'secondary'}
-          component="p">
-          <b>
-            Registration and ticketing are open now : Click{' '}
-            <Link
-              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
-              href="/#/register">
-              here
-            </Link>
-          </b>
         </Typography>
       </Grid>
     </PageContainer>
