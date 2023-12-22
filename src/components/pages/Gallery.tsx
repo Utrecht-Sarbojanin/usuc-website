@@ -1,6 +1,9 @@
 import ImageList from '@mui/material/ImageList';
 import { PageContainer, theme } from '../PageContainer';
 import ImageListItem from '@mui/material/ImageListItem';
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 export const Gallery = () => {
   return (
@@ -154,6 +157,26 @@ export const Gallery = () => {
           />
         </ImageListItem>
       </ImageList>
+      <Grid item xs={15}>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'primary'}
+          component="p">
+          <br />
+          <br />
+          For more pictures:{' '}
+          <Link
+            sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+            href="https://www.flickr.com/photos/usuc/albums"
+            target="_blank">
+            Click here
+          </Link>
+        </Typography>
+      </Grid>
     </PageContainer>
   );
 };
