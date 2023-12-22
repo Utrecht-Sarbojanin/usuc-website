@@ -290,7 +290,7 @@ const BottomCards = () => {
               type: 'outlined'
             }
           ]}>
-          <Line>{'Sight & Sounds of Utrecht Sarbojanin'}</Line>
+          <Line>{'Sights & Sounds of Utrecht Sarbojanin'}</Line>
         </InfoCard>
       </Grid>
     </Container>
