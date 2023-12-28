@@ -82,7 +82,7 @@ export const GalleryItemDialog = (props: any) => {
   return (
     <Dialog
       fullWidth={true}
-      maxWidth={'sm'}
+      maxWidth={'md'}
       open={props.open}
       onClose={props.handleClose}
       aria-labelledby="scroll-dialog-title"
@@ -91,7 +91,8 @@ export const GalleryItemDialog = (props: any) => {
         dividers={true}
         sx={{
           overflow: 'auto',
-          padding: '5',
+          margin: '0px',
+          padding: '0px',
           scrollbarwidth: 'thick',
           '&::-webkit-scrollbar': {
             width: '0.4em'
