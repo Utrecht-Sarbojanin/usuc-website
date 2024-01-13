@@ -16,6 +16,8 @@ import { Ticket } from '../../models/Ticket';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export const Registration = () => {
+  const isMenuAvailable = false;
+  const isEventScheduleAvailable = false;
   const [menuDialogOpen, setMenuDialogOpen] = useState(false);
 
   const [ticket, setTicket] = useState<Ticket>({
@@ -43,7 +45,7 @@ export const Registration = () => {
   };
 
   return (
-    <PageContainer title="Registration for Durgotsav 2023">
+    <PageContainer title="Registration for Saraswati Puja 2024">
       <Grid item xs={12}>
         <Typography
           sx={{
@@ -53,23 +55,27 @@ export const Registration = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>Date:</b> 20-24 October, 2023 <br /> <b>Venue:</b> Steenovenweg 5,
-          3532 AE, Utrecht, Netherlands
+          <b>Date:</b> 17 February, 2024 <br /> <b>Venue:</b> Franciscusdreef 4,
+          3555 SW, Utrecht, Netherlands
           <br />
           <br />
         </Typography>
-        <Typography
-          sx={{
-            fontSize: '18px'
-          }}
-          variant="body1"
-          align="center"
-          component="p">
-          (To view the food menu of each day, click on the 'See Menu' button on
-          each pass type)
-          <br />
-          <br />
-        </Typography>
+        {isMenuAvailable ? (
+          <Typography
+            sx={{
+              fontSize: '18px'
+            }}
+            variant="body1"
+            align="center"
+            component="p">
+            (To view the food menu of each day, click on the 'See Menu' button
+            on each pass type)
+            <br />
+            <br />
+          </Typography>
+        ) : (
+          ''
+        )}
       </Grid>
       <Tickets openMenuDialog={openMenuDialog} />
       <Grid item xs={15}>
@@ -83,14 +89,18 @@ export const Registration = () => {
           component="p">
           <br />
           <br />
-          <b>
-            For detailed schedule of Durga Puja 2023 : Click{' '}
-            <Link
-              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
-              href="/#/event-schedule">
-              here
-            </Link>
-          </b>
+          {isEventScheduleAvailable ? (
+            <b>
+              For detailed schedule of Durga Puja 2023 : Click{' '}
+              <Link
+                sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+                href="/#/event-schedule">
+                here
+              </Link>
+            </b>
+          ) : (
+            ''
+          )}
         </Typography>
       </Grid>
       <MenuDialog
@@ -106,12 +116,12 @@ const ticketList: Ticket[] = [
   {
     type: 'full_event',
     title: 'Full Event Pass',
-    date: '20 October to 24 October, 2023',
+    date: '17 February, 2023',
     menu: {
       title: 'Full Event Menu',
       menuImages: []
     },
-    link: 'https://usuc.yapsody.com/event/book/781129/31566477'
+    link: 'https://usuc.yapsody.com/event/book/798767/31603585'
   }
 ];
 
@@ -140,10 +150,10 @@ const TicketCard = (props: any) => {
             paddingLeft: '10px',
             paddingRight: '10px'
           }}>
-          <img
+          {/* <img
             src={require(`../../static/covers/cov_${ticket.type}.jpg`)}
             alt="featured"
-          />
+          /> */}
         </CardMedia>
         <CardContent>
           <div
@@ -161,7 +171,7 @@ const TicketCard = (props: any) => {
           {ticket.date} */}
         </CardContent>
         <CardActions>
-          {ticket.menu === undefined ? (
+          {ticket.menu === undefined || ticket.menu.menuImages.length === 0 ? (
             ''
           ) : (
             <Button

@@ -24,6 +24,7 @@ import { Logo } from '../Logo';
 const theme: Theme = createTheme(themeOptions);
 
 export const Home = () => {
+  const isNoticeEnabled = false;
   return (
     <>
       <Container
@@ -42,7 +43,28 @@ export const Home = () => {
         </Grid>
       </Container>
       <BottomCards />
+      {isNoticeEnabled ? <Notice /> : ''}
     </>
+  );
+};
+
+const Notice = () => {
+  return (
+    <Container maxWidth="lg">
+      <Grid sx={{ marginTop: '30px', marginBottom: '30px' }} item xs={12}>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'secondary'}
+          component="p">
+          **Free registration for Devi Darshan & Pushpanjali is open now. Passes
+          are limited. Hurry Up!
+        </Typography>
+      </Grid>
+    </Container>
   );
 };
 
@@ -230,6 +252,16 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
+            navigateTo('gallery');
+          }}>
+          Gallery
+        </Button>
+      </Grid>
+      <Grid sx={{ padding: '10px' }} item xs={6}>
+        <Button
+          fullWidth
+          variant="contained"
+          onClick={() => {
             navigateTo('about');
           }}>
           About Us
@@ -240,6 +272,8 @@ const NavigationButtons = () => {
 };
 
 const BottomCards = () => {
+  const isMomentsEnabled = false;
+  const isDurgotsavEnabled = true;
   return (
     <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
       <Grid container spacing={5} alignItems="flex-end">
@@ -269,29 +303,45 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Recent Event'}
+          title={'Upcoming Event'}
           specialTitle={true}
-          buttons={[
-            { text: 'Read More', target: 'durgotsav2023', type: 'outlined' }
-          ]}
-          buttonText="Read More"
-          target="durgotsav2023">
-          <Line>{'Durgotsav (Durga Puja) 2023'}</Line>
-          <Line>{'October 20 - 24'}</Line>
+          buttons={[{ text: 'Register', target: 'register', type: 'outlined' }]}
+          buttonText="Register"
+          target="register">
+          <Line>{'Saraswati Puja 2024'}</Line>
+          <Line>{'17 February 2024'}</Line>
         </InfoCard>
-        <InfoCard
-          title={'Moments'}
-          buttonText="View Gallery"
-          target="event-schedule"
-          buttons={[
-            {
-              text: 'View Gallery',
-              target: 'gallery',
-              type: 'outlined'
-            }
-          ]}>
-          <Line>{'Sights & Sounds of Utrecht Sarbojanin'}</Line>
-        </InfoCard>
+        {isDurgotsavEnabled ? (
+          <InfoCard
+            title={'USUC Durgotsav'}
+            buttons={[
+              { text: 'Read More', target: 'durgotsav2023', type: 'outlined' }
+            ]}
+            buttonText="Read More"
+            target="durgotsav2023">
+            <Line>{'Durgotsav (Durga Puja) 2023'}</Line>
+            <Line>{'20 - 24 October 2023'}</Line>
+          </InfoCard>
+        ) : (
+          ''
+        )}
+        {isMomentsEnabled ? (
+          <InfoCard
+            title={'Moments'}
+            buttonText="View Gallery"
+            target="event-schedule"
+            buttons={[
+              {
+                text: 'View Gallery',
+                target: 'gallery',
+                type: 'outlined'
+              }
+            ]}>
+            <Line>{'Sights & Sounds of Utrecht Sarbojanin'}</Line>
+          </InfoCard>
+        ) : (
+          ''
+        )}
       </Grid>
     </Container>
   );

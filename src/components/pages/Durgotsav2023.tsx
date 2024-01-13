@@ -27,8 +27,8 @@ export const Durgotsav2023 = () => {
           <br />
           <br /> USUC is a non-profit organization run by donations, and also
           looks for opportunities to support charitable causes. One of the
-          biggest events in 2023 will be organized by USUC is the Utrecht
-          Sarbojanin Durgotsav during 20 - 24 October (5 days).
+          biggest events in 2023 organized by USUC was the Utrecht Sarbojanin
+          Durgotsav between 20 - 24 October (5 days).
           <br />
           <br />
           Durga Puja also celebrated as Navratri or Dussehra festival is an
