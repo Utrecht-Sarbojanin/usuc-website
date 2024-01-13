@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.0d536f52.js",
+    "main.js": "/static/js/main.0adfdc81.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/cover_home.jpg": "/static/media/cover_home.b6ce1e8764b18a193c76.jpg",
@@ -16,6 +16,7 @@
     "static/media/gallery_(7).jpg": "/static/media/gallery_(7).92022c7d47ea50c58cf5.jpg",
     "static/media/gallery_(5).jpg": "/static/media/gallery_(5).2977950458936ef8a161.jpg",
     "static/media/gallery_(18).jpg": "/static/media/gallery_(18).837c83fca58cfc40f0ba.jpg",
+    "static/media/cov_full_event.jpg": "/static/media/cov_full_event.bde1ff3e33eebe97b6d2.jpg",
     "static/media/gallery_(12).jpg": "/static/media/gallery_(12).d4fa07357e81243fe751.jpg",
     "static/media/gallery_(16).jpg": "/static/media/gallery_(16).1928d8ba41c24a83534a.jpg",
     "static/media/gallery_(13).jpg": "/static/media/gallery_(13).fae24dcd50a9f9b4b997.jpg",
@@ -31,11 +32,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.92d24d8f271bf1663cff.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.0d536f52.js.map": "/static/js/main.0d536f52.js.map",
+    "main.0adfdc81.js.map": "/static/js/main.0adfdc81.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.0d536f52.js"
+    "static/js/main.0adfdc81.js"
   ]
 }
