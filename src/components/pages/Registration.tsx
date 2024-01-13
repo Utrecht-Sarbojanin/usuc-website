@@ -55,8 +55,11 @@ export const Registration = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>Date:</b> 17 February, 2024 <br /> <b>Venue:</b> Franciscusdreef 4,
-          3555 SW, Utrecht, Netherlands
+          <b>Date:</b> 17 February, 2024
+          <br />
+          <b>Time:</b> 11 a.m. to 3:30 pm
+          <br />
+          <b>Venue:</b> Franciscusdreef 4, 3555 SW, Utrecht, Netherlands
           <br />
           <br />
         </Typography>
@@ -150,10 +153,10 @@ const TicketCard = (props: any) => {
             paddingLeft: '10px',
             paddingRight: '10px'
           }}>
-          {/* <img
+          <img
             src={require(`../../static/covers/cov_${ticket.type}.jpg`)}
             alt="featured"
-          /> */}
+          />
         </CardMedia>
         <CardContent>
           <div
