@@ -16,7 +16,7 @@ import { Ticket } from '../../models/Ticket';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 export const Registration = () => {
-  const isMenuAvailable = false;
+  const isMenuAvailable = true;
   const isEventScheduleAvailable = false;
   const [menuDialogOpen, setMenuDialogOpen] = useState(false);
 
@@ -72,7 +72,7 @@ export const Registration = () => {
             align="center"
             component="p">
             (To view the food menu of each day, click on the 'See Menu' button
-            on each pass type)
+            on pass type)
             <br />
             <br />
           </Typography>
@@ -119,10 +119,10 @@ const ticketList: Ticket[] = [
   {
     type: 'full_event',
     title: 'Full Event Pass',
-    date: '17 February, 2023',
+    date: '17 February, 2024',
     menu: {
       title: 'Full Event Menu',
-      menuImages: []
+      menuImages: ['saraswati_puja_menu.jpeg']
     },
     link: 'https://usuc.yapsody.com/event/book/798767/31603585'
   }
