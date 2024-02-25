@@ -45,7 +45,7 @@ export const Registration = () => {
   };
 
   return (
-    <PageContainer title="Registration for Saraswati Puja 2024">
+    <PageContainer title="Registration for Bengali New Year Celebration 2024">
       <Grid item xs={12}>
         <Typography
           sx={{
@@ -55,11 +55,11 @@ export const Registration = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>Date:</b> 17 February, 2024
+          <b>Date:</b> 14 April, 2024
           <br />
-          <b>Time:</b> 11 a.m. to 3:30 pm
+          <b>Time:</b> 3:00 p.m. to 10:00 pm
           <br />
-          <b>Venue:</b> Franciscusdreef 4, 3555 SW, Utrecht, Netherlands
+          <b>Venue:</b> Oranjelaan 10, 3454 BT, Utrecht, Netherlands
           <br />
           <br />
         </Typography>
@@ -119,12 +119,12 @@ const ticketList: Ticket[] = [
   {
     type: 'full_event',
     title: 'Full Event Pass',
-    date: '17 February, 2024',
+    date: '14 April, 2024',
     menu: {
       title: 'Full Event Menu',
-      menuImages: ['saraswati_puja_menu.jpeg']
+      menuImages: ['boishakh_non_veg_menu.jpg', 'boishakh_veg_menu.jpg']
     },
-    link: 'https://usuc.yapsody.com/event/book/798767/31603585'
+    link: 'https://usuc.yapsody.com/event/book/803521/31648557'
   }
 ];
 

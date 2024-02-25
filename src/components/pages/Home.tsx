@@ -308,8 +308,9 @@ const BottomCards = () => {
           buttons={[{ text: 'Register', target: 'register', type: 'outlined' }]}
           buttonText="Register"
           target="register">
-          <Line>{'Saraswati Puja 2024'}</Line>
-          <Line>{'17 February 2024'}</Line>
+          <Line>{'Poila Boishakh (Bengali New Year)'}</Line>
+          <Line>{'Celebration 2024'}</Line>
+          <Line>{'14 April 2024'}</Line>
         </InfoCard>
         {isDurgotsavEnabled ? (
           <InfoCard
