@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.d1526382.js",
+    "main.js": "/static/js/main.e3369c9e.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/cover_home.jpg": "/static/media/cover_home.b6ce1e8764b18a193c76.jpg",
     "static/media/gallery_(1).jpg": "/static/media/gallery_(1).7338b34204ba0909cc4f.jpg",
     "static/media/gallery_(20).jpg": "/static/media/gallery_(20).bf1f18727681e96d94d5.jpg",
-    "static/media/saraswati_puja_menu.jpeg": "/static/media/saraswati_puja_menu.b1654f72f2fbf2ff1447.jpeg",
+    "static/media/boishakh_non_veg_menu.jpg": "/static/media/boishakh_non_veg_menu.7b77da54ce71190f7f08.jpg",
+    "static/media/boishakh_veg_menu.jpg": "/static/media/boishakh_veg_menu.431a9526f4f71c118e14.jpg",
     "static/media/gallery_(6).jpg": "/static/media/gallery_(6).9c1493866aa269bc1860.jpg",
     "static/media/gallery_(14).jpg": "/static/media/gallery_(14).280a9578b6338d4392cf.jpg",
     "static/media/gallery_(21).jpg": "/static/media/gallery_(21).15c3ed967be6b1bbc97b.jpg",
     "static/media/gallery_(2).jpg": "/static/media/gallery_(2).fd4fdaeb98fad99671d2.jpg",
     "static/media/gallery_(10).jpg": "/static/media/gallery_(10).66dbb62d096ae8ee569e.jpg",
     "static/media/gallery_(19).jpg": "/static/media/gallery_(19).05f2f91b7ce40b2c67a9.jpg",
+    "static/media/cov_full_event.jpg": "/static/media/cov_full_event.d75be0558d8142f76742.jpg",
     "static/media/gallery_(7).jpg": "/static/media/gallery_(7).92022c7d47ea50c58cf5.jpg",
     "static/media/gallery_(5).jpg": "/static/media/gallery_(5).2977950458936ef8a161.jpg",
     "static/media/gallery_(18).jpg": "/static/media/gallery_(18).837c83fca58cfc40f0ba.jpg",
-    "static/media/cov_full_event.jpg": "/static/media/cov_full_event.bde1ff3e33eebe97b6d2.jpg",
     "static/media/gallery_(12).jpg": "/static/media/gallery_(12).d4fa07357e81243fe751.jpg",
     "static/media/gallery_(16).jpg": "/static/media/gallery_(16).1928d8ba41c24a83534a.jpg",
     "static/media/gallery_(13).jpg": "/static/media/gallery_(13).fae24dcd50a9f9b4b997.jpg",
@@ -33,11 +34,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.92d24d8f271bf1663cff.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.d1526382.js.map": "/static/js/main.d1526382.js.map",
+    "main.e3369c9e.js.map": "/static/js/main.e3369c9e.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.d1526382.js"
+    "static/js/main.e3369c9e.js"
   ]
 }
