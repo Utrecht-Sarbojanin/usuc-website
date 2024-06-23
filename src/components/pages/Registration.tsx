@@ -45,7 +45,7 @@ export const Registration = () => {
   };
 
   return (
-    <PageContainer title="Registration for Bengali New Year Celebration 2024">
+    <PageContainer title="Registration for USUC Event">
       <Grid item xs={12}>
         <Typography
           sx={{
@@ -55,13 +55,6 @@ export const Registration = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>Date:</b> 14 April, 2024
-          <br />
-          <b>Time:</b> 3:00 p.m. to 10:00 pm
-          <br />
-          <b>Venue:</b> Oranjelaan 10, 3454 BT, Utrecht, Netherlands
-          <br />
-          <br />
         </Typography>
         {isMenuAvailable ? (
           <Typography
@@ -71,8 +64,7 @@ export const Registration = () => {
             variant="body1"
             align="center"
             component="p">
-            (To view the food menu of each day, click on the 'See Menu' button
-            on pass type)
+            No upcoming event planned. Please come back later.
             <br />
             <br />
           </Typography>
@@ -80,7 +72,7 @@ export const Registration = () => {
           ''
         )}
       </Grid>
-      <Tickets openMenuDialog={openMenuDialog} />
+      
       <Grid item xs={15}>
         <Typography
           sx={{
@@ -115,7 +107,7 @@ export const Registration = () => {
   );
 };
 
-const ticketList: Ticket[] = [
+/*const ticketList: Ticket[] = [
   {
     type: 'full_event',
     title: 'Full Event Pass',
@@ -126,9 +118,9 @@ const ticketList: Ticket[] = [
     },
     link: 'https://usuc.yapsody.com/event/book/803521/31648557'
   }
-];
+];*/
 
-const Tickets = (props: any) => {
+/*const Tickets = (props: any) => {
   return (
     <Grid container spacing={5} alignItems="flex-end">
       {ticketList.map((ticket, index) => {
@@ -138,7 +130,7 @@ const Tickets = (props: any) => {
       })}
     </Grid>
   );
-};
+};*/
 
 const TicketCard = (props: any) => {
   const ticket: Ticket = props.ticket;
