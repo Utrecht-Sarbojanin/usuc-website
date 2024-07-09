@@ -165,7 +165,7 @@ const DaywiseEvent = (props: any) => {
           </div>
 
           <List>
-            {event.activities.map((item, index) => (
+            {event.activities?.map((item, index) => (
               <EventItem item={item} />
             ))}
           </List>
