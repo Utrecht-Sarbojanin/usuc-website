@@ -18,6 +18,17 @@ export const themeOptions: ThemeOptions = {
       secondary: "#ec9340",
     },
   },
+  components:{
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          "&.Mui-disabled": {
+            color:"#575757"
+          }
+        }
+      }
+    }
+  },
   typography: {
     fontFamily: "Assistant",
     h2: {

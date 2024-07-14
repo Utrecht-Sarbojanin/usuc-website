@@ -7,3 +7,11 @@ export interface Ticket {
   menu?: Menu;
   link: string;
 }
+
+export const EMPTY_TICKET: Ticket = {
+  type: '',
+  title: '',
+  date: '',
+  menu: { title: '', menuImages: [] },
+  link: ''
+};

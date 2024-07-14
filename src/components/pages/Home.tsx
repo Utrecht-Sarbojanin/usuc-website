@@ -221,7 +221,7 @@ const NavigationButtons = () => {
         <Button
           fullWidth
           variant="contained"
-          href="https://drive.google.com/file/d/1cRMWrnlp7L6tYN-5HQhtxb7P6AINi0Gm/view?usp=sharing"
+          href="https://drive.google.com/file/d/1fBualbBINzNRbNKLzhtSXuShvAwPi7Cc/view?usp=drivesdk"
           target="_blank">
           Brochure
         </Button>
@@ -272,15 +272,13 @@ const NavigationButtons = () => {
 };
 
 const BottomCards = () => {
-  const isMomentsEnabled = false;
-  const isDurgotsavEnabled = true;
+  const isMomentsEnabled = true;
+  const isDurgotsavEnabled = false;
   return (
     <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
       <Grid container spacing={5} alignItems="flex-end">
         <InfoCard
           title={'Our Sarbojanin Heritage'}
-          buttonText="Read More"
-          target="sarbojanin"
           buttons={[
             { text: 'Read More', target: 'sarbojanin', type: 'outlined' }
           ]}>
@@ -303,11 +301,16 @@ const BottomCards = () => {
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
         <InfoCard
-          title={'Upcoming Event'}
+          title={'Recent Event'}
           specialTitle={true}
-          buttons={[{ text: 'Register', target: 'register', type: 'outlined' }]}
-          buttonText="Register"
-          target="register">
+          buttons={[
+            {
+              text: 'Registration Closed',
+              target: 'register',
+              type: 'outlined',
+              disabled: true
+            }
+          ]}>
           <Line>{'Poila Boishakh (Bengali New Year)'}</Line>
           <Line>{'Celebration 2024'}</Line>
           <Line>{'14 April 2024'}</Line>
@@ -317,11 +320,9 @@ const BottomCards = () => {
             title={'USUC Durgotsav'}
             buttons={[
               { text: 'Read More', target: 'durgotsav2023', type: 'outlined' }
-            ]}
-            buttonText="Read More"
-            target="durgotsav2023">
-            <Line>{'Durgotsav (Durga Puja) 2023'}</Line>
-            <Line>{'20 - 24 October 2023'}</Line>
+            ]}>
+            <Line>{'Durgotsav (Durga Puja) 2024'}</Line>
+            <Line>{'8 - 12 October 2024'}</Line>
           </InfoCard>
         ) : (
           ''
@@ -329,8 +330,6 @@ const BottomCards = () => {
         {isMomentsEnabled ? (
           <InfoCard
             title={'Moments'}
-            buttonText="View Gallery"
-            target="event-schedule"
             buttons={[
               {
                 text: 'View Gallery',
@@ -349,8 +348,6 @@ const BottomCards = () => {
 };
 
 const InfoCard = (props: any) => {
-  const target: string = props.target || '';
-
   const titleColor =
     props.specialTitle === true
       ? theme.palette.secondary.main
@@ -388,32 +385,48 @@ const InfoCard = (props: any) => {
 };
 
 const Buttons = (props: any) => {
+  interface ButtonProps {
+    target: string;
+    text: string;
+    type: string;
+    disabled?: boolean;
+  }
+
   const navigate = useNavigate();
   const navigateTo = (path: string) => {
     navigate('/' + path);
   };
 
-  return props.buttons.map(
-    (element: { target: string; text: string; type: string }) => {
-      const color =
-        element.type === 'outlined'
-          ? 'inherit'
-          : element.type === 'primary'
-          ? 'primary'
-          : 'secondary';
-      return (
-        <Button
-          fullWidth
-          variant={element.type === 'outlined' ? 'outlined' : 'contained'}
-          color={color}
-          onClick={() => {
-            navigateTo(element.target);
-          }}>
-          {element.text}
-        </Button>
-      );
-    }
-  );
+  return props.buttons.map((element: ButtonProps) => {
+    const color =
+      element.type === 'outlined'
+        ? 'inherit'
+        : element.type === 'primary'
+        ? 'primary'
+        : 'secondary';
+
+    const showButton = element.disabled ?? false;
+
+    return (
+      <>
+        {!showButton ? (
+          <Button
+            fullWidth
+            variant={element.type === 'outlined' ? 'outlined' : 'contained'}
+            color={color}
+            onClick={() => {
+              navigateTo(element.target);
+            }}>
+            {element.text}
+          </Button>
+        ) : (
+          <Button disabled fullWidth variant={'contained'}>
+            {element.text}
+          </Button>
+        )}
+      </>
+    );
+  });
 };
 
 const Line = (props: any) => {
