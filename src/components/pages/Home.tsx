@@ -212,9 +212,9 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('durgotsav2023');
+            navigateTo('durgotsav2024');
           }}>
-          Durgotsav 2023
+          Durgotsav 2024
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
@@ -273,7 +273,7 @@ const NavigationButtons = () => {
 
 const BottomCards = () => {
   const isMomentsEnabled = true;
-  const isDurgotsavEnabled = false;
+  const isDurgotsavEnabled = true;
   return (
     <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
       <Grid container spacing={5} alignItems="flex-end">
@@ -300,8 +300,8 @@ const BottomCards = () => {
           </Line>
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
-        <InfoCard
-          title={'Recent Event'}
+        {/*<InfoCard
+          title={'Upcoming Event'}
           specialTitle={true}
           buttons={[
             {
@@ -314,15 +314,16 @@ const BottomCards = () => {
           <Line>{'Poila Boishakh (Bengali New Year)'}</Line>
           <Line>{'Celebration 2024'}</Line>
           <Line>{'14 April 2024'}</Line>
-        </InfoCard>
+        </InfoCard>*/}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'USUC Durgotsav'}
+            title={'USUC Durgotsav 2024'}
+            specialTitle={true}
             buttons={[
-              { text: 'Read More', target: 'durgotsav2023', type: 'outlined' }
+              { text: 'Register', target: 'register', type: 'outlined' }
             ]}>
-            <Line>{'Durgotsav (Durga Puja) 2024'}</Line>
-            <Line>{'8 - 12 October 2024'}</Line>
+            <Line>{'Durga Puja 2024'}</Line>
+            <Line>{'9 - 13 October 2024'}</Line>
           </InfoCard>
         ) : (
           ''
