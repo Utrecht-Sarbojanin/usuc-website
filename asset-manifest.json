@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.ca4cc144.js",
+    "main.js": "/static/js/main.bb9a0fba.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/dashami_lunch.png": "/static/media/dashami_lunch.a428cf013f96133eb353.png",
     "static/media/nabami_dinner.png": "/static/media/nabami_dinner.56485b2cb38d877a28f0.png",
@@ -45,14 +45,14 @@
     "static/media/gallery_(9).jpg": "/static/media/gallery_(9).b4a4d9c672cabab448ca.jpg",
     "static/media/gallery_(8).jpg": "/static/media/gallery_(8).2eec7982c4a386ac201e.jpg",
     "static/media/maa_durga_bw.jpg": "/static/media/maa_durga_bw.a6e9a4277742486aaf5b.jpg",
-    "static/media/usuc_logo.png": "/static/media/usuc_logo.4239eb693f61c83f298b.png",
+    "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.ca4cc144.js.map": "/static/js/main.ca4cc144.js.map",
+    "main.bb9a0fba.js.map": "/static/js/main.bb9a0fba.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.ca4cc144.js"
+    "static/js/main.bb9a0fba.js"
   ]
 }
