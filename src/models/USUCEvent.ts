@@ -18,5 +18,5 @@ export const DURGA_PUJA_2024: USUCEvent = {
   name: 'Durgotsav 2024',
   date: '9 October to 13 October, 2024',
   time: '',
-  venue: 'ZIMIHC Theater Stefanus'
+  venue: 'ZIMIHC Theater Stefanus - Braziliëdreef 2, 3563 CK Utrecht, Netherlands'
 };

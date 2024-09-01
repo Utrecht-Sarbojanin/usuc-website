@@ -6,14 +6,13 @@ import { CssBaseline } from '@mui/material';
 import { Theme } from '@emotion/react';
 import { Footer } from './components/Footer';
 import { DummyPage } from './components/pages/DummyPage';
-import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Contact } from './components/pages/Contact';
 import { Durgotsav2024 } from './components/pages/Durgotsav2024';
 import { Sarbojanin } from './components/pages/Sarbojanin';
 import { Donation } from './components/pages/Donation';
-import { Event } from './components/pages/Event';
 import { Registration } from './components/pages/Registration';
 import { Gallery } from './components/pages/Gallery';
 

@@ -124,6 +124,9 @@ const LeftColumn = () => {
 };
 
 const RightColumn = () => {
+  const isTwitterBtnEnabled = false;
+  const isEmailBtnEnabled = false;
+
   return (
     <Grid
       sx={{
@@ -158,36 +161,36 @@ const RightColumn = () => {
             href="https://www.instagram.com/utrechtsarbojanin"
             target="_blank"
             underline="none">
-            <InstagramIcon sx={{ margin: '15px' }} fontSize="large" />
+            <InstagramIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
         </Typography>
 
-        <Typography display={'inline'}>
+        {isTwitterBtnEnabled?(<Typography display={'inline'}>
           <Link
             href="https://twitter.com/suc_utrecht"
             target="_blank"
             underline="none">
-            <TwitterIcon sx={{ margin: '15px' }} fontSize="large" />
+            <TwitterIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
-        </Typography>
+        </Typography>):''}
 
         <Typography display={'inline'}>
           <Link
             href="https://www.facebook.com/profile.php?id=100087395963544"
             target="_blank"
             underline="none">
-            <FacebookIcon sx={{ margin: '15px' }} fontSize="large" />
+            <FacebookIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
         </Typography>
 
-        <Typography display={'inline'}>
+        {isEmailBtnEnabled?(<Typography display={'inline'}>
           <Link
             href="mailto:info@utrechtsarbojanin.nl"
             target="_blank"
             underline="none">
-            <EmailIcon sx={{ margin: '15px' }} fontSize="large" />
+            <EmailIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
-        </Typography>
+        </Typography>):''}
       </Grid>
     </Grid>
   );

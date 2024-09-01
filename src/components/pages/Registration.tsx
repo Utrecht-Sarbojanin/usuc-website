@@ -3,7 +3,7 @@ import { PageContainer } from '../PageContainer';
 import { useState } from 'react';
 import { MenuDialog } from '../MenuDialog';
 import { EMPTY_TICKET, Ticket } from '../../models/Ticket';
-import { DURGA_PUJA_2024, EMPTY_EVENT } from '../../models/USUCEvent';
+import { DURGA_PUJA_2024 } from '../../models/USUCEvent';
 import { Tickets } from '../Tickets';
 
 export const Registration = () => {
