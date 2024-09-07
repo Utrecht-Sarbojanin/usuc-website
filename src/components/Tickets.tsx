@@ -10,15 +10,15 @@ const ticketList: Ticket[] = [
     menu: {
       title: 'Full Event Menu',
       menuImages: [
-        'shashthi_dinner.png',
-        'saptami_lunch.png',
-        'saptami_dinner.png',
-        'ashtami_lunch.png',
-        'ashtami_dinner.png',
-        'nabami_lunch.png',
-        'nabami_dinner.png',
-        'dashami_lunch.png',
-        'dashami_dinner.png'
+        'shashthi_dinner.jpg',
+        'saptami_lunch.jpg',
+        'saptami_dinner.jpg',
+        'ashtami_lunch.jpg',
+        'ashtami_dinner.jpg',
+        'nabami_lunch.jpg',
+        'nabami_dinner.jpg',
+        'dashami_lunch.jpg',
+        'dashami_dinner.jpg'
       ]
     },
     link: 'https://usuc.yapsody.com/event/book/819749/31694085'
@@ -30,11 +30,11 @@ const ticketList: Ticket[] = [
     menu: {
       title: 'Full Weekend Menu',
       menuImages: [
-        'ashtami_dinner.png',
-        'nabami_lunch.png',
-        'nabami_dinner.png',
-        'dashami_lunch.png',
-        'dashami_dinner.png'
+        'ashtami_dinner.jpg',
+        'nabami_lunch.jpg',
+        'nabami_dinner.jpg',
+        'dashami_lunch.jpg',
+        'dashami_dinner.jpg'
       ]
     },
     link: 'https://usuc.yapsody.com/event/book/820507/31695729'
@@ -45,7 +45,7 @@ const ticketList: Ticket[] = [
     date: '9 October, 2024',
     menu: {
       title: 'Shashthi Menu',
-      menuImages: ['shashthi_dinner.png']
+      menuImages: ['shashthi_dinner.jpg']
     },
     link: 'https://usuc.yapsody.com/event/book/820489/31695707'
   },
@@ -55,7 +55,7 @@ const ticketList: Ticket[] = [
     date: '10 October, 2024',
     menu: {
       title: 'Saptami Menu',
-      menuImages: ['saptami_lunch.png', 'saptami_dinner.png']
+      menuImages: ['saptami_lunch.jpg', 'saptami_dinner.jpg']
     },
     link: 'https://usuc.yapsody.com/event/book/820493/31695711'
   },
@@ -65,7 +65,7 @@ const ticketList: Ticket[] = [
     date: '11 October, 2024',
     menu: {
       title: 'Ashtami Menu',
-      menuImages: ['ashtami_lunch.png', 'ashtami_dinner.png']
+      menuImages: ['ashtami_lunch.jpg', 'ashtami_dinner.jpg']
     },
     link: 'https://usuc.yapsody.com/event/book/820499/31695717'
   },
@@ -75,7 +75,7 @@ const ticketList: Ticket[] = [
     date: '12 October, 2024',
     menu: {
       title: 'Nabami Menu',
-      menuImages: ['nabami_lunch.png', 'nabami_dinner.png']
+      menuImages: ['nabami_lunch.jpg', 'nabami_dinner.jpg']
     },
     link: 'https://usuc.yapsody.com/event/book/820503/31695725'
   },
@@ -85,7 +85,7 @@ const ticketList: Ticket[] = [
     date: '13 October, 2024',
     menu: {
       title: 'Dashami Menu',
-      menuImages: ['dashami_lunch.png', 'dashami_dinner.png']
+      menuImages: ['dashami_lunch.jpg', 'dashami_dinner.jpg']
     },
     link: 'https://usuc.yapsody.com/event/book/820505/31695727'
   }
