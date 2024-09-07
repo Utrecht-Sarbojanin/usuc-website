@@ -1,17 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.d2f92902.js",
+    "main.js": "/static/js/main.638b36df.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
-    "static/media/dashami_lunch.png": "/static/media/dashami_lunch.a428cf013f96133eb353.png",
-    "static/media/nabami_dinner.png": "/static/media/nabami_dinner.56485b2cb38d877a28f0.png",
-    "static/media/dashami_dinner.png": "/static/media/dashami_dinner.3dde2b7f4bc238458878.png",
-    "static/media/nabami_lunch.png": "/static/media/nabami_lunch.6ffc72873300738dc5b4.png",
-    "static/media/saptami_lunch.png": "/static/media/saptami_lunch.54e0136d865e64f1d23f.png",
-    "static/media/ashtami_dinner.png": "/static/media/ashtami_dinner.33ef3bad3031bb27cf25.png",
-    "static/media/ashtami_lunch.png": "/static/media/ashtami_lunch.8b1bc1e74a155630b487.png",
-    "static/media/saptami_dinner.png": "/static/media/saptami_dinner.2ede5c57cf4b16a52e6f.png",
-    "static/media/shashthi_dinner.png": "/static/media/shashthi_dinner.7aacf1b3c04917bd42b6.png",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/cov_dashami.jpg": "/static/media/cov_dashami.e2472930d7c54c3f0b8d.jpg",
     "static/media/cov_weekend.jpg": "/static/media/cov_weekend.8de49d754568e2d3ac82.jpg",
@@ -57,11 +48,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.d2f92902.js.map": "/static/js/main.d2f92902.js.map",
+    "main.638b36df.js.map": "/static/js/main.638b36df.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.d2f92902.js"
+    "static/js/main.638b36df.js"
   ]
 }
