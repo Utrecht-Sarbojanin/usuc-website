@@ -148,7 +148,8 @@ export const Durgotsav2024 = () => {
         </Typography>*/}
         <Typography
           sx={{
-            fontSize: '18px'
+            fontSize: '40px',
+            fontStyle: 'italic'
           }}
           variant="body1"
           align="center"
@@ -157,7 +158,7 @@ export const Durgotsav2024 = () => {
           <b>
             Registration and ticketing are open now : Click{' '}
             <Link
-              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+              sx={{ textDecoration: 'underline', color: '#87ceeb' }}
               href="/#/register">
               here
             </Link>
