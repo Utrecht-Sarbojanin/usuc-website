@@ -148,7 +148,7 @@ export const Durgotsav2024 = () => {
         </Typography>*/}
         <Typography
           sx={{
-            fontSize: '40px',
+            fontSize: '25px',
             fontStyle: 'italic'
           }}
           variant="body1"
