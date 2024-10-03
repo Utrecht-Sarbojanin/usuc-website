@@ -328,6 +328,17 @@ const BottomCards = () => {
           <Line>{'Celebration 2024'}</Line>
           <Line>{'14 April 2024'}</Line>
         </InfoCard>*/}
+        <InfoCard
+            title={'Puja Nirghonto'}
+            buttons={[
+              {
+                text: 'View Schedule',
+                target: 'event-schedule',
+                type: 'outlined'
+              }
+            ]}>
+            <Line>{'Detailed Schedule of Durga Puja 2024'}</Line>
+          </InfoCard>
         {isDurgotsavEnabled ? (
           <InfoCard
             title={'USUC Durgotsav 2024'}

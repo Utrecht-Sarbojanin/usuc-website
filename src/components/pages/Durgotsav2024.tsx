@@ -129,7 +129,7 @@ export const Durgotsav2024 = () => {
           <br />
           <br />
         </Typography>
-        {/*<Typography
+        <Typography
           sx={{
             fontSize: '18px'
           }}
@@ -138,14 +138,14 @@ export const Durgotsav2024 = () => {
           color={'secondary'}
           component="p">
           <b>
-            For detailed schedule of Durga Puja 2023 : Click{' '}
+            For detailed schedule of Durga Puja 2024 : Click{' '}
             <Link
               sx={{ textDecoration: 'none', color: '#c0c0c0' }}
               href="/#/event-schedule">
               here
             </Link>
           </b>
-        </Typography>*/}
+        </Typography>
         <Typography
           sx={{
             fontSize: '25px',

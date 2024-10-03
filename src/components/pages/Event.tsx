@@ -17,78 +17,83 @@ import { USUCEvent } from '../../models/USUCEvent';
 const eventsSchedule: USUCEvent[] = [
   {
     name: 'Maha Shashthi',
-    date: 'October 20,2023',
+    date: 'October 9,2024',
     activities: [
-      '16:30 Shashthi Puja, Durga Bodhon O Amontron',
-      '17:30 Sondha Arati',
-      '18:30 Cultural Program at USUC Rangmanch',
+      '08:44 Bilva Nimantran & Sankalpa',
+      '10:00 Kalparambha, Akal Bodhon',
+      '14:00 Amantran and Adhibas',
+      '17:30 Sandha Arati',
+      '18:30 Cultural events start',
       '20:30 Dinner Starts'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/781085/31566433'
+    registrationLink: 'https://usuc.yapsody.com/event/book/820489/31695707'
   },
   {
     name: 'Maha Saptami',
-    date: 'October 21,2023',
+    date: 'October 10,2024',
     activities: [
-      '09:00 Maha Saptami Puja',
-      '12:30 Pushpanjali',
+      '08:30 Maha Saptami Puja start',
+      '9:00 Kalabau snan',
       '13:00 Lunch',
       '15:00 Fun Activities',
       '17:30 Sondha Arati',
-      '18:30 Cultural Program at USUC Rangmanch',
+      '18:30 Cultural events start',
       '20:30 Dinner Starts'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/781087/31566435'
+    registrationLink: 'https://usuc.yapsody.com/event/book/820493/31695711'
   },
   {
     name: 'Maha Ashtami',
-    date: 'October 22,2023',
+    date: 'October 11,2024',
     activities: [
       '08:30 Maha Ashtami Puja',
-      '11:30 Pushpanjali',
+      '10:30 Pushpanjali',
       '13:00 Lunch',
       '15:00 Fun Activities',
       '16:00 Maha Ashtami Sandhi Puja',
-      '17:30 Sondha Arati',
-      '18:30 Cultural Program at USUC Rangmanch',
+      '17:30 Sandhi Puja Anjali',
+      '18:00 Sondha Arati',
+      '18:30 Cultural events start',
       '20:30 Dinner Starts'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/781089/31566437'
+    registrationLink: 'https://usuc.yapsody.com/event/book/820499/31695717'
   },
   {
     name: 'Maha Nabami',
-    date: 'October 23,2023',
+    date: 'October 12,2024',
     activities: [
       '09:00 Maha Nabami Puja',
       '12:00 Pushpanjali',
       '13:00 Maha Nabami Hom/Yajna',
       '13:00 Lunch',
       '15:00 Fun Activities',
-      '18:30 Cultural Program at USUC Rangmanch',
+      '15:00 Homa, Havan',
+      '17:30 Sandha Arati',
+      '18:30 Cultural events start',
       '20:30 Dinner Starts'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/781091/31566439'
+    registrationLink: 'https://usuc.yapsody.com/event/book/820503/31695725'
   },
   {
     name: 'Bijoya Dashami',
-    date: 'October 24,2023',
+    date: 'October 13,2024',
     activities: [
-      '09:00 Dashami Puja',
+      '08:00 Dashami Puja',
+      '10:00 Bisharjan & Dadhikarma',
       '11:00 DebiBodhon & Sindoor Khela',
-      '12:00 Bisharjan',
       '13:00 Lunch',
       '15:00 Fun Activities',
-      '17:00 Cultural Program at USUC Rangmanch',
-      '19:00 DJ Night',
+      '16:00 Devir gaman',
+      '17:00 Cultural events start',
       '20:30 Dinner Starts'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/781093/31566441'
+    registrationLink: 'https://usuc.yapsody.com/event/book/820505/31695727'
   }
 ];
 
 export const Event = () => {
   return (
-    <PageContainer title="Durga Puja 2023 Schedule">
+    <PageContainer title="Durga Puja 2024 Schedule">
       <Grid item xs={15}>
         <Typography
           sx={{
@@ -98,7 +103,7 @@ export const Event = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>Venue:</b> Steenovenweg 5, 3532 AE, Utrecht, Netherlands
+          <b>Venue:</b> ZIMIHC Theater Stefanus - Braziliëdreef 2, 3563 CK Utrecht, Netherlands
           <br />
           <br />
         </Typography>

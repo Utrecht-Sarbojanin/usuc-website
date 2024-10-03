@@ -15,6 +15,7 @@ import { Sarbojanin } from './components/pages/Sarbojanin';
 import { Donation } from './components/pages/Donation';
 import { Registration } from './components/pages/Registration';
 import { Gallery } from './components/pages/Gallery';
+import { Event } from './components/pages/Event';
 
 const theme: Theme = createTheme(themeOptions);
 
@@ -33,7 +34,7 @@ const App = () => {
           <Route path="/sarbojanin" element={<Sarbojanin />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/donate" element={<Donation />} />
-          {/* <Route path="/event-schedule" element={<Event />} /> */}
+          <Route path="/event-schedule" element={<Event />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </HashRouter>
