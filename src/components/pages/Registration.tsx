@@ -3,12 +3,12 @@ import { PageContainer } from '../PageContainer';
 import { useState } from 'react';
 import { MenuDialog } from '../MenuDialog';
 import { EMPTY_TICKET, Ticket } from '../../models/Ticket';
-import { EMPTY_EVENT } from '../../models/USUCEvent';
+import { DURGA_PUJA_2024 } from '../../models/USUCEvent';
 import { Tickets } from '../Tickets';
 
 export const Registration = () => {
-  const isEventPlanned = false;
-  const eventData = EMPTY_EVENT;
+  const isEventPlanned = true;
+  const eventData = DURGA_PUJA_2024;
   const isMenuAvailable = true;
   const isEventScheduleAvailable = false;
 

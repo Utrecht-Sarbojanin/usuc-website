@@ -15,6 +15,7 @@ import {
 } from '@mui/material';
 import { themeOptions } from '../../Theme';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
@@ -124,6 +125,9 @@ const LeftColumn = () => {
 };
 
 const RightColumn = () => {
+  const isTwitterBtnEnabled = false;
+  const isEmailBtnEnabled = false;
+
   return (
     <Grid
       sx={{
@@ -158,36 +162,45 @@ const RightColumn = () => {
             href="https://www.instagram.com/utrechtsarbojanin"
             target="_blank"
             underline="none">
-            <InstagramIcon sx={{ margin: '15px' }} fontSize="large" />
+            <InstagramIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
         </Typography>
 
         <Typography display={'inline'}>
           <Link
+            href="https://whatsapp.com/channel/0029Va7k0gQLNSa68Tx7Fn3U"
+            target="_blank"
+            underline="none">
+            <WhatsAppIcon sx={{ margin: '10px' }} fontSize="large" />
+          </Link>
+        </Typography>
+
+        {isTwitterBtnEnabled?(<Typography display={'inline'}>
+          <Link
             href="https://twitter.com/suc_utrecht"
             target="_blank"
             underline="none">
-            <TwitterIcon sx={{ margin: '15px' }} fontSize="large" />
+            <TwitterIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
-        </Typography>
+        </Typography>):''}
 
         <Typography display={'inline'}>
           <Link
             href="https://www.facebook.com/profile.php?id=100087395963544"
             target="_blank"
             underline="none">
-            <FacebookIcon sx={{ margin: '15px' }} fontSize="large" />
+            <FacebookIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
         </Typography>
 
-        <Typography display={'inline'}>
+        {isEmailBtnEnabled?(<Typography display={'inline'}>
           <Link
             href="mailto:info@utrechtsarbojanin.nl"
             target="_blank"
             underline="none">
-            <EmailIcon sx={{ margin: '15px' }} fontSize="large" />
+            <EmailIcon sx={{ margin: '10px' }} fontSize="large" />
           </Link>
-        </Typography>
+        </Typography>):''}
       </Grid>
     </Grid>
   );
@@ -212,9 +225,9 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('durgotsav2023');
+            navigateTo('durgotsav2024');
           }}>
-          Durgotsav 2023
+          Durgotsav 2024
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
@@ -273,7 +286,7 @@ const NavigationButtons = () => {
 
 const BottomCards = () => {
   const isMomentsEnabled = true;
-  const isDurgotsavEnabled = false;
+  const isDurgotsavEnabled = true;
   return (
     <Container sx={{ paddingTop: '40px' }} maxWidth="lg" component="main">
       <Grid container spacing={5} alignItems="flex-end">
@@ -300,8 +313,8 @@ const BottomCards = () => {
           </Line>
           <Line>{'The all embracing cultural heritage of Bengal'}</Line>
         </InfoCard>
-        <InfoCard
-          title={'Recent Event'}
+        {/*<InfoCard
+          title={'Upcoming Event'}
           specialTitle={true}
           buttons={[
             {
@@ -314,15 +327,31 @@ const BottomCards = () => {
           <Line>{'Poila Boishakh (Bengali New Year)'}</Line>
           <Line>{'Celebration 2024'}</Line>
           <Line>{'14 April 2024'}</Line>
-        </InfoCard>
+        </InfoCard>*/}
+        {/* <InfoCard
+            title={'Puja Nirghonto'}
+            buttons={[
+              {
+                text: 'View Schedule',
+                target: 'event-schedule',
+                type: 'outlined'
+              }
+            ]}>
+            <Line>{'Detailed Schedule of Durga Puja 2024'}</Line>
+          </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'USUC Durgotsav'}
+            title={'USUC Durgotsav 2024'}
+            specialTitle={true}
             buttons={[
-              { text: 'Read More', target: 'durgotsav2023', type: 'outlined' }
+              { text: 'Register', target: 'register', type: 'secondary' },{
+                text: 'View Schedule',
+                target: 'event-schedule',
+                type: 'secondary'
+              }
             ]}>
-            <Line>{'Durgotsav (Durga Puja) 2024'}</Line>
-            <Line>{'8 - 12 October 2024'}</Line>
+            <Line>{'Durga Puja 2024'}</Line>
+            <Line>{'9 - 13 October 2024'}</Line>
           </InfoCard>
         ) : (
           ''
