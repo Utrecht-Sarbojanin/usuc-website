@@ -328,7 +328,7 @@ const BottomCards = () => {
           <Line>{'Celebration 2024'}</Line>
           <Line>{'14 April 2024'}</Line>
         </InfoCard>*/}
-        <InfoCard
+        {/* <InfoCard
             title={'Puja Nirghonto'}
             buttons={[
               {
@@ -338,13 +338,17 @@ const BottomCards = () => {
               }
             ]}>
             <Line>{'Detailed Schedule of Durga Puja 2024'}</Line>
-          </InfoCard>
+          </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
             title={'USUC Durgotsav 2024'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'outlined' }
+              { text: 'Register', target: 'register', type: 'secondary' },{
+                text: 'View Schedule',
+                target: 'event-schedule',
+                type: 'secondary'
+              }
             ]}>
             <Line>{'Durga Puja 2024'}</Line>
             <Line>{'9 - 13 October 2024'}</Line>

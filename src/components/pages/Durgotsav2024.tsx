@@ -140,11 +140,13 @@ export const Durgotsav2024 = () => {
           <b>
             For detailed schedule of Durga Puja 2024 : Click{' '}
             <Link
-              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+              sx={{ textDecoration: 'none', color: '#87ceeb' }}
               href="/#/event-schedule">
               here
             </Link>
           </b>
+          <br/>
+          <br/>
         </Typography>
         <Typography
           sx={{
@@ -158,7 +160,7 @@ export const Durgotsav2024 = () => {
           <b>
             Registration and ticketing are open now : Click{' '}
             <Link
-              sx={{ textDecoration: 'underline', color: '#87ceeb' }}
+              sx={{ textDecoration: 'none', color: '#87ceeb' }}
               href="/#/register">
               here
             </Link>

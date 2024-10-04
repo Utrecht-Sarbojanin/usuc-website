@@ -33,7 +33,7 @@ const eventsSchedule: USUCEvent[] = [
     date: 'October 10,2024',
     activities: [
       '08:30 Maha Saptami Puja start',
-      '9:00 Kalabau snan',
+      '09:00 Kalabau snan',
       '13:00 Lunch',
       '15:00 Fun Activities',
       '17:30 Sondha Arati',
@@ -123,7 +123,7 @@ export const Event = () => {
           <br />
           <br />
           <b>
-            * For all other event passes go to{' '}
+            *For all other event passes go to{' '}
             <Link
               sx={{ textDecoration: 'none', color: '#c0c0c0' }}
               href="/#/register">
