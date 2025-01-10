@@ -14,9 +14,9 @@ export const EMPTY_EVENT: USUCEvent = {
   venue: ''
 };
 
-export const DURGA_PUJA_2024: USUCEvent = {
-  name: 'Durgotsav 2024',
-  date: '9 October to 13 October, 2024',
+export const DIWALI_2024: USUCEvent = {
+  name: 'Diwali Nostalgia 2024',
+  date: '3 November, 2024',
   time: '',
-  venue: 'ZIMIHC Theater Stefanus - Braziliëdreef 2, 3563 CK Utrecht, Netherlands'
+  venue: 'De Schalm - Oranjelaan 10, 3454 BT, Utrecht, Netherlands'
 };

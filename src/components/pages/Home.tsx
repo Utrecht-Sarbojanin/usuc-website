@@ -175,14 +175,18 @@ const RightColumn = () => {
           </Link>
         </Typography>
 
-        {isTwitterBtnEnabled?(<Typography display={'inline'}>
-          <Link
-            href="https://twitter.com/suc_utrecht"
-            target="_blank"
-            underline="none">
-            <TwitterIcon sx={{ margin: '10px' }} fontSize="large" />
-          </Link>
-        </Typography>):''}
+        {isTwitterBtnEnabled ? (
+          <Typography display={'inline'}>
+            <Link
+              href="https://twitter.com/suc_utrecht"
+              target="_blank"
+              underline="none">
+              <TwitterIcon sx={{ margin: '10px' }} fontSize="large" />
+            </Link>
+          </Typography>
+        ) : (
+          ''
+        )}
 
         <Typography display={'inline'}>
           <Link
@@ -193,14 +197,18 @@ const RightColumn = () => {
           </Link>
         </Typography>
 
-        {isEmailBtnEnabled?(<Typography display={'inline'}>
-          <Link
-            href="mailto:info@utrechtsarbojanin.nl"
-            target="_blank"
-            underline="none">
-            <EmailIcon sx={{ margin: '10px' }} fontSize="large" />
-          </Link>
-        </Typography>):''}
+        {isEmailBtnEnabled ? (
+          <Typography display={'inline'}>
+            <Link
+              href="mailto:info@utrechtsarbojanin.nl"
+              target="_blank"
+              underline="none">
+              <EmailIcon sx={{ margin: '10px' }} fontSize="large" />
+            </Link>
+          </Typography>
+        ) : (
+          ''
+        )}
       </Grid>
     </Grid>
   );
@@ -225,18 +233,19 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('durgotsav2024');
+            navigateTo('register');
           }}>
-          Durgotsav 2024
+          Diwali 2024
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
         <Button
           fullWidth
           variant="contained"
-          href="https://drive.google.com/file/d/1fBualbBINzNRbNKLzhtSXuShvAwPi7Cc/view?usp=drivesdk"
-          target="_blank">
-          Brochure
+          onClick={() => {
+            navigateTo('durgotsav2024');
+          }}>
+          Durgotsav 2024
         </Button>
       </Grid>
 
@@ -341,17 +350,13 @@ const BottomCards = () => {
           </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'USUC Durgotsav 2024'}
+            title={'Diwali Nostalgia 2024'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'secondary' },{
-                text: 'View Schedule',
-                target: 'event-schedule',
-                type: 'secondary'
-              }
+              { text: 'Register', target: 'register', type: 'secondary' }
             ]}>
-            <Line>{'Durga Puja 2024'}</Line>
-            <Line>{'9 - 13 October 2024'}</Line>
+            <Line>{'Disco Diwali Bollywood'}</Line>
+            <Line>{'3 November 2024'}</Line>
           </InfoCard>
         ) : (
           ''

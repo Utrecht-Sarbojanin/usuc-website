@@ -3,13 +3,13 @@ import { PageContainer } from '../PageContainer';
 import { useState } from 'react';
 import { MenuDialog } from '../MenuDialog';
 import { EMPTY_TICKET, Ticket } from '../../models/Ticket';
-import { DURGA_PUJA_2024 } from '../../models/USUCEvent';
+import { DIWALI_2024 } from '../../models/USUCEvent';
 import { Tickets } from '../Tickets';
 
 export const Registration = () => {
   const isEventPlanned = true;
-  const eventData = DURGA_PUJA_2024;
-  const isMenuAvailable = true;
+  const eventData = DIWALI_2024;
+  const isMenuAvailable = false;
   const isEventScheduleAvailable = false;
 
   const [menuDialogOpen, setMenuDialogOpen] = useState(false);
