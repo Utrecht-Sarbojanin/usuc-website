@@ -4,10 +4,10 @@ import { Ticket } from "../models/Ticket";
 
 const ticketList: Ticket[] = [
   {
-    type: 'diwali',
-    title: 'Diwali Pass',
-    date: '3 November, 2024',
-    link: 'https://usuc.yapsody.com/event/book/827827/31713187'
+    type: 'saraswati_puja',
+    title: 'Saraswati Puja Pass',
+    date: '2 February, 2025',
+    link: 'https://usuc.yapsody.com/event/book/835811/31727017'
   }
   ];
   

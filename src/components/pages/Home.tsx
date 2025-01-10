@@ -235,7 +235,7 @@ const NavigationButtons = () => {
           onClick={() => {
             navigateTo('register');
           }}>
-          Diwali 2024
+          Saraswati Puja '25
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
@@ -245,7 +245,7 @@ const NavigationButtons = () => {
           onClick={() => {
             navigateTo('durgotsav2024');
           }}>
-          Durgotsav 2024
+          Durgotsav '24
         </Button>
       </Grid>
 
@@ -350,13 +350,13 @@ const BottomCards = () => {
           </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'Diwali Nostalgia 2024'}
+            title={'Saraswati Bandana 2025'}
             specialTitle={true}
             buttons={[
               { text: 'Register', target: 'register', type: 'secondary' }
             ]}>
-            <Line>{'Disco Diwali Bollywood'}</Line>
-            <Line>{'3 November 2024'}</Line>
+            <Line>{'Saraswati Puja'}</Line>
+            <Line>{'2 February 2025'}</Line>
           </InfoCard>
         ) : (
           ''
