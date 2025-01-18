@@ -7,6 +7,12 @@ const ticketList: Ticket[] = [
     type: 'saraswati_puja',
     title: 'Saraswati Puja Pass',
     date: '2 February, 2025',
+    menu: {
+      title: 'Basanti Menu',
+      menuImages: [
+        'basanti_lunch.jpg'
+      ]
+    },
     link: 'https://usuc.yapsody.com/event/book/835811/31727017'
   }
   ];
