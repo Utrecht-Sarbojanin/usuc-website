@@ -4,16 +4,17 @@ import { Ticket } from "../models/Ticket";
 
 const ticketList: Ticket[] = [
   {
-    type: 'saraswati_puja',
-    title: 'Saraswati Puja Pass',
-    date: '2 February, 2025',
+    type: 'boishakhi',
+    title: 'Poila Boishakh Pass',
+    date: '12 April, 2025',
     menu: {
-      title: 'Basanti Menu',
+      title: 'Boishakhi Menu',
       menuImages: [
-        'basanti_lunch.jpg'
+        'boishakhi_dinner_non-veg.jpeg',
+        'boishakhi_dinner_veg.jpeg'
       ]
     },
-    link: 'https://usuc.yapsody.com/event/book/835811/31727017'
+    link: 'https://usuc.yapsody.com/event/book/841287/31737043'
   }
   ];
   

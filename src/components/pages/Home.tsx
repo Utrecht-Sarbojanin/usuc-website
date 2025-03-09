@@ -235,7 +235,7 @@ const NavigationButtons = () => {
           onClick={() => {
             navigateTo('register');
           }}>
-          Saraswati Puja '25
+          Poila Boishakh '25
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
@@ -350,13 +350,13 @@ const BottomCards = () => {
           </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'Saraswati Bandana 2025'}
+            title={'Esho Hey Boishakh 1432'}
             specialTitle={true}
             buttons={[
               { text: 'Register', target: 'register', type: 'secondary' }
             ]}>
-            <Line>{'Saraswati Puja'}</Line>
-            <Line>{'2 February 2025'}</Line>
+            <Line>{'Bengali New Year'}</Line>
+            <Line>{'12 April 2025'}</Line>
           </InfoCard>
         ) : (
           ''

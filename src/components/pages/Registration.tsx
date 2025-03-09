@@ -3,12 +3,12 @@ import { PageContainer } from '../PageContainer';
 import { useState } from 'react';
 import { MenuDialog } from '../MenuDialog';
 import { EMPTY_TICKET, Ticket } from '../../models/Ticket';
-import { DIWALI_2024 } from '../../models/USUCEvent';
+import { BOISHAKHI_2025 } from '../../models/USUCEvent';
 import { Tickets } from '../Tickets';
 
 export const Registration = () => {
   const isEventPlanned = true;
-  const eventData = DIWALI_2024;
+  const eventData = BOISHAKHI_2025;
   const isMenuAvailable = false;
   const isEventScheduleAvailable = false;
 
