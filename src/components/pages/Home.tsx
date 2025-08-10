@@ -21,6 +21,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import EmailIcon from '@mui/icons-material/Email';
 import { useNavigate } from 'react-router-dom';
 import { Logo } from '../Logo';
+import { isDisabled } from '@testing-library/user-event/dist/utils';
 
 const theme: Theme = createTheme(themeOptions);
 
@@ -225,9 +226,9 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('durgotsav2024');
+            navigateTo('Durgotsav2025');
           }}>
-          Durgotsav 2024
+          Durgotsav 2025
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
@@ -328,7 +329,7 @@ const BottomCards = () => {
           <Line>{'Celebration 2024'}</Line>
           <Line>{'14 April 2024'}</Line>
         </InfoCard>*/}
-        {/* <InfoCard
+        {/*<InfoCard
             title={'Puja Nirghonto'}
             buttons={[
               {
@@ -337,21 +338,17 @@ const BottomCards = () => {
                 type: 'outlined'
               }
             ]}>
-            <Line>{'Detailed Schedule of Durga Puja 2024'}</Line>
-          </InfoCard> */}
+            <Line>{'Detailed Schedule of Durga Puja 2025'}</Line>
+          </InfoCard>*/}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'USUC Durgotsav 2024'}
+            title={'USUC Durgotsav 2025'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'secondary' },{
-                text: 'View Schedule',
-                target: 'event-schedule',
-                type: 'secondary'
-              }
+              { text: 'Register', target: 'register', type: 'outlined', disabled: true }
             ]}>
-            <Line>{'Durga Puja 2024'}</Line>
-            <Line>{'9 - 13 October 2024'}</Line>
+            <Line>{'Durga Puja 2025'}</Line>
+            <Line>{'28 September - 2 October 2025'}</Line>
           </InfoCard>
         ) : (
           ''

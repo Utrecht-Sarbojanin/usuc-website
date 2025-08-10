@@ -9,9 +9,9 @@ import {
 import { PageContainer, theme } from '../PageContainer';
 import { ImageCredit } from '../ImageCredit';
 
-export const Durgotsav2024 = () => {
+export const Durgotsav2025 = () => {
   return (
-    <PageContainer title={'Durgotsav 2024'}>
+    <PageContainer title={'Durgotsav 2025'}>
       <Grid item xs={12} lg={7}>
         <Typography
           sx={{
@@ -28,7 +28,7 @@ export const Durgotsav2024 = () => {
           <br /> USUC is a non-profit organization run by donations, and also
           looks for opportunities to support charitable causes. One of the
           biggest events in 2024 that is going to be organized by USUC will be the Utrecht Sarbojanin
-          Durgotsav between 9 - 13 October (5 days).
+          Durgotsav between 28 September - 2 October (5 days).
           <br />
           <br />
           Durga Puja also celebrated as Navratri or Dussehra festival is an
@@ -99,7 +99,7 @@ export const Durgotsav2024 = () => {
           variant="body1"
           align="justify"
           component="p">
-          Utrecht Sarbojanin Durgotsav 9 - 13 October 2024 will be a 5-day long
+          Utrecht Sarbojanin Durgotsav 28 September - 2 October 2024 will be a 5-day long
           festival and we aim to deliver a spectacular event and one of the
           biggest Indian International Festivals in the Netherlands. This is an
           excellent opportunity for people to experience the rich multicultural
@@ -137,13 +137,16 @@ export const Durgotsav2024 = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>
-            For detailed schedule of Durga Puja 2024 : Click{' '}
+          {/*<b>
+            For detailed schedule of Durga Puja 2025 : Click{' '}
             <Link
               sx={{ textDecoration: 'none', color: '#87ceeb' }}
               href="/#/event-schedule">
               here
             </Link>
+          </b>*/}
+          <b>
+            Detailed schedule of Durga Puja 2025 will be published soon.
           </b>
           <br/>
           <br/>
@@ -157,13 +160,16 @@ export const Durgotsav2024 = () => {
           align="center"
           color={'secondary'}
           component="p">
-          <b>
+          {/*<b>
             Registration and ticketing are open now : Click{' '}
             <Link
               sx={{ textDecoration: 'none', color: '#87ceeb' }}
               href="/#/register">
               here
             </Link>
+          </b>*/}
+          <b>
+            Registration and ticketing will open soon : coming soon
           </b>
         </Typography>
       </Grid>

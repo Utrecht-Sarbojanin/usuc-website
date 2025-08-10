@@ -161,7 +161,7 @@ export const PageContainer = (props: any) => {
         <List>
           {[
             { name: 'Home', link: '' },
-            { name: 'Durgotsav 2024', link: 'durgotsav2024' },
+            { name: 'Durgotsav 2025', link: 'Durgotsav2025' },
             { name: 'Brochure', link: '' },
             { name: 'Gallery', link: 'gallery' },
             // { name: 'Registration', link: 'register' },
