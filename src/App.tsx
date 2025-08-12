@@ -10,7 +10,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Contact } from './components/pages/Contact';
-import { Durgotsav2024 } from './components/pages/Durgotsav2024';
+import { Durgotsav } from './components/pages/Durgotsav';
 import { Sarbojanin } from './components/pages/Sarbojanin';
 import { Donation } from './components/pages/Donation';
 import { Registration } from './components/pages/Registration';
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/durgotsav2024" element={<Durgotsav2024 />} />
+          <Route path="/durgotsav2025" element={<Durgotsav />} />
           <Route path="/sarbojanin" element={<Sarbojanin />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/donate" element={<Donation />} />

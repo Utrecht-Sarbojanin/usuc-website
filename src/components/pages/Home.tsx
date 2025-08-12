@@ -228,24 +228,15 @@ const NavigationButtons = () => {
       justifyContent="center"
       alignItems="center"
       xs={12}>
-      <Grid sx={{ padding: '10px' }} item xs={6}>
+  
+      <Grid sx={{ padding: '10px' }} item xs={12}>
         <Button
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('register');
+            navigateTo('durgotsav2025');
           }}>
-          Poila Boishakh '25
-        </Button>
-      </Grid>
-      <Grid sx={{ padding: '10px' }} item xs={6}>
-        <Button
-          fullWidth
-          variant="contained"
-          onClick={() => {
-            navigateTo('durgotsav2024');
-          }}>
-          Durgotsav '24
+          Durgotsav 2025
         </Button>
       </Grid>
 
@@ -350,13 +341,13 @@ const BottomCards = () => {
           </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'Esho Hey Boishakh 1432'}
+            title={'USUC Durgotsav 2025'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'secondary' }
+              { text: 'Register', target: 'register', type: 'outlined', disabled: true },
             ]}>
-            <Line>{'Bengali New Year'}</Line>
-            <Line>{'12 April 2025'}</Line>
+            <Line>{'Durga Pujo'}</Line>
+            <Line>{'27 September - 1 October 2025'}</Line>
           </InfoCard>
         ) : (
           ''
