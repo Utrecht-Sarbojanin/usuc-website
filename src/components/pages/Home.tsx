@@ -344,7 +344,7 @@ const BottomCards = () => {
             title={'USUC Durgotsav 2025'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'outlined', disabled: true },
+              { text: 'Register', target: 'register', type: 'outlined' },
             ]}>
             <Line>{'Durga Pujo'}</Line>
             <Line>{'27 September - 1 October 2025'}</Line>

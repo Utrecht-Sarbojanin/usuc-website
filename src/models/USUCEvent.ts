@@ -14,9 +14,9 @@ export const EMPTY_EVENT: USUCEvent = {
   venue: ''
 };
 
-export const BOISHAKHI_2025: USUCEvent = {
-  name: 'Bengali New Year 2025',
-  date: '12 April, 2025',
+export const DURGOTSAV_2025: USUCEvent = {
+  name: 'Durgotsav 2025',
+  date: '27 September - 1 October, 2025',
   time: '',
-  venue: 'De Schalm - Oranjelaan 10, 3454 BT, Utrecht, Netherlands'
+  venue: 'ZIMIHC Theater Stefanus - Braziliëdreef 2, 3563 CK, Utrecht, Netherlands'
 };
