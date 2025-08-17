@@ -57,7 +57,7 @@ const ticketList: Ticket[] = [
       title: 'Shashthi Menu',
       menuImages: [/* 'shashthi_dinner.jpg' */]
     },
-    link: 'https://usuc.yapsody.com/event/book/853093/31765563'
+    link: 'https://usuc.yapsody.com/event/book/853091/31765561'
   },
   {
     type: 'saptami',
@@ -67,7 +67,7 @@ const ticketList: Ticket[] = [
       title: 'Saptami Menu',
       menuImages: [/* 'saptami_lunch.jpg', 'saptami_dinner.jpg' */]
     },
-    link: 'https://usuc.yapsody.com/event/book/820493/31695711'
+    link: 'https://usuc.yapsody.com/event/book/853093/31765563'
   },
   {
     type: 'ashtami',
