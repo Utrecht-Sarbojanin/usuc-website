@@ -1,16 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.14a4484a.js",
+    "main.js": "/static/js/main.2403edcf.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
-    "static/media/cov_dashami.jpg": "/static/media/cov_dashami.e2472930d7c54c3f0b8d.jpg",
-    "static/media/cov_weekend.jpg": "/static/media/cov_weekend.8de49d754568e2d3ac82.jpg",
-    "static/media/cov_shashthi.jpg": "/static/media/cov_shashthi.1f9e56aa7d8864553154.jpg",
-    "static/media/cov_saptami.jpg": "/static/media/cov_saptami.624c5978eee2a6b9c6d5.jpg",
-    "static/media/cov_ashtami.jpg": "/static/media/cov_ashtami.c1398df6b85b66897578.jpg",
-    "static/media/cov_nabami.jpg": "/static/media/cov_nabami.fbdf854ac9e20f038b9c.jpg",
-    "static/media/cov_full_event.jpg": "/static/media/cov_full_event.6e2b5a4e60ae7bdcb409.jpg",
     "static/media/cover_home.jpg": "/static/media/cover_home.b6ce1e8764b18a193c76.jpg",
     "static/media/gallery_(1).jpg": "/static/media/gallery_(1).7338b34204ba0909cc4f.jpg",
     "static/media/gallery_(20).jpg": "/static/media/gallery_(20).bf1f18727681e96d94d5.jpg",
@@ -33,20 +26,27 @@
     "static/media/gallery_(4).jpg": "/static/media/gallery_(4).8888cf0d0a03be0e485d.jpg",
     "static/media/gallery_(17).jpg": "/static/media/gallery_(17).758d61cd50673d403c87.jpg",
     "static/media/gallery_(3).jpg": "/static/media/gallery_(3).377373e55f5573d2a696.jpg",
-    "static/media/cov_panchami.jpg": "/static/media/cov_panchami.c80bafadaf216edcfc3e.jpg",
     "static/media/gallery_(15).jpg": "/static/media/gallery_(15).9c8fced34f8a4f25574e.jpg",
     "static/media/gallery_(11).jpg": "/static/media/gallery_(11).320c7eb1705fc72c4a27.jpg",
     "static/media/gallery_(9).jpg": "/static/media/gallery_(9).b4a4d9c672cabab448ca.jpg",
     "static/media/gallery_(8).jpg": "/static/media/gallery_(8).2eec7982c4a386ac201e.jpg",
     "static/media/maa_durga_bw.jpg": "/static/media/maa_durga_bw.a6e9a4277742486aaf5b.jpg",
+    "static/media/cov_shashthi.jpg": "/static/media/cov_shashthi.b079c297f176337e7353.jpg",
+    "static/media/cov_dashami.jpg": "/static/media/cov_dashami.82a85a7a901df522b79f.jpg",
+    "static/media/cov_panchami.jpg": "/static/media/cov_panchami.70c66eae6a8556c9b597.jpg",
+    "static/media/cov_weekend.jpg": "/static/media/cov_weekend.57066d1192fd6d92ef10.jpg",
+    "static/media/cov_ashtami.jpg": "/static/media/cov_ashtami.3d4d59d1ea9f7c1806b7.jpg",
+    "static/media/cov_saptami.jpg": "/static/media/cov_saptami.e76de98a8666b203d16c.jpg",
+    "static/media/cov_full_event.jpg": "/static/media/cov_full_event.a6cea875d7f93fae2dae.jpg",
+    "static/media/cov_nabami.jpg": "/static/media/cov_nabami.99096d97d5775d4dfe1e.jpg",
     "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.14a4484a.js.map": "/static/js/main.14a4484a.js.map",
+    "main.2403edcf.js.map": "/static/js/main.2403edcf.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.14a4484a.js"
+    "static/js/main.2403edcf.js"
   ]
 }
