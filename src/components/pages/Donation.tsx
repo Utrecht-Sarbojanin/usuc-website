@@ -1,7 +1,70 @@
-import { Button, Grid, Typography } from '@mui/material';
+import { Button, Chip, Grid, Typography } from '@mui/material';
 import { PageContainer } from '../PageContainer';
+import { DonationCategory } from '../../models/DonationCategory';
 
 export const Donation = () => {
+  const donationCategories: DonationCategory[] = [
+    {
+      title: 'Pujor Samogri (all days)',
+      value: '151',
+      link: 'https://pay.sumup.com/b2c/QNCCD1TJ'
+    },
+    {
+      title: 'Ashtami Bhog',
+      value: '101',
+      link: 'https://pay.sumup.com/b2c/QOZRKSJN'
+    },
+    {
+      title: 'Mayer Saree',
+      value: '51',
+      link: 'https://pay.sumup.com/b2c/Q4D0ZPUC'
+    },
+    {
+      title: 'Ashtami Sandhi Puja',
+      value: '51',
+      link: 'https://pay.sumup.com/b2c/QEY8RYXW'
+    },
+    {
+      title: 'Dashami Dadhi Karma',
+      value: '51',
+      link: 'https://pay.sumup.com/b2c/QJVM4UEJ'
+    },
+    {
+      title: 'Nabami Bhog',
+      value: '51',
+      link: 'https://pay.sumup.com/b2c/Q91DYG03'
+    },
+    {
+      title: 'Saptami Bhog',
+      value: '51',
+      link: 'https://pay.sumup.com/b2c/QQLYH4PJ'
+    },
+    {
+      title: 'Nabami Sandhya Arati',
+      value: '31',
+      link: 'https://pay.sumup.com/b2c/QSHQ58V7'
+    },
+    {
+      title: 'Saptami Sandhya Arati',
+      value: '31',
+      link: 'https://pay.sumup.com/b2c/QNRIKZ58'
+    },
+    {
+      title: 'Ashtami Anjali',
+      value: '31',
+      link: 'https://pay.sumup.com/b2c/Q3FFR2AT'
+    },
+    {
+      title: 'Nabami Anjali',
+      value: '31',
+      link: 'https://pay.sumup.com/b2c/QPOZRHW3'
+    },
+    {
+      title: 'Saptami Anjali',
+      value: '31',
+      link: 'https://pay.sumup.com/b2c/Q3GM7BT6'
+    }
+  ];
   return (
     <PageContainer title="Make a Donation">
       <Grid item xs={12}>
@@ -65,7 +128,41 @@ export const Donation = () => {
           “Donated By: [your full name] [email id] [phone number]”
           <br />
           e.g. “Donated By: Vincent V G (v.vangogh@musea.nl) +31612345678”
+          <br />
+          <br />
         </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="justify"
+          component="p">
+          You may also donate in one or more of the following categories to
+          support Durga Puja 2025:
+          <br />
+        </Typography>
+        <ul>
+          {donationCategories.map((category, index) => (
+            <li
+              key={index}
+              style={{ paddingTop: '10px', paddingBottom: '10px' }}>
+              {category.title}
+              <Chip
+                sx={{
+                  fontSize: '15px',
+                  marginLeft: '10px'
+                }}
+                label={`Donate €${category.value}`}
+                color="secondary"
+                component="a"
+                href={category.link}
+                target="_blank"
+                clickable
+              />
+            </li>
+          ))}
+        </ul>
         <Typography
           sx={{
             marginTop: '20px',

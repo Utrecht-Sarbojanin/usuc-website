@@ -1,4 +1,4 @@
-import { Grid, Typography, Card, CardMedia, CardContent } from '@mui/material';
+import { Grid, Typography, Card, CardMedia, CardContent, Link, Button } from '@mui/material';
 import { PageContainer, theme } from '../PageContainer';
 import { ImageCredit } from '../ImageCredit';
 
@@ -23,8 +23,13 @@ export const Durgotsav = () => {
           <br />
           <br /> As a non-profit organization funded through donations, USUC
           also actively seeks opportunities to support charitable causes. In
-          2024, one of our most anticipated events will be the Utrecht
+          2025, one of our most anticipated events will be the Utrecht
           Sarbojanin Durgotsav, taking place from <i>September 27 to October 1, 2025</i> over five vibrant days.
+          <i>To register for the event, please go to the <Link
+              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+              href="/#/register">
+              registration page
+            </Link>.</i>
           <br />
           <br />
           Durga Puja is an annual Hindu festival originating in the Indian
@@ -127,6 +132,23 @@ export const Durgotsav = () => {
           September 27 to October 1, 2025
           <br />
           <br />
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="center"
+          color={'secondary'}
+          component="p">
+          <Button
+          sx={{
+            marginTop: '20px'
+          }}
+          variant="contained"
+          href="/#/donate">
+          Be a patron of the event
+        </Button>
         </Typography>
       </Grid>
     </PageContainer>
