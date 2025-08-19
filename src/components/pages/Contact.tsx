@@ -2,14 +2,14 @@ import {
   Card,
   CardMedia,
   Grid,
+  Link,
   Typography,
   useMediaQuery,
   useTheme
 } from '@mui/material';
 import { PageContainer } from '../PageContainer';
-import { Logo } from '../Logo';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import { Logo } from '../Logo';import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
 export const Contact = () => {
@@ -96,9 +96,31 @@ export const Contact = () => {
           item
           xs={12}>
           <br />
-          <InstagramIcon sx={{ marginRight: '15px' }} fontSize="large" />
-          <TwitterIcon sx={{ marginRight: '15px' }} fontSize="large" />
-          <FacebookIcon sx={{ marginRight: '15px' }} fontSize="large" />
+          <Typography display={'inline'}>
+          <Link
+            href="https://www.instagram.com/utrechtsarbojanin"
+            target="_blank"
+            underline="none">
+            <InstagramIcon sx={{ marginRight: '10px' }} fontSize="large" />
+          </Link>
+        </Typography>
+
+        <Typography display={'inline'}>
+          <Link
+            href="https://whatsapp.com/channel/0029Va7k0gQLNSa68Tx7Fn3U"
+            target="_blank"
+            underline="none">
+            <WhatsAppIcon sx={{ marginRight: '10px' }} fontSize="large" />
+          </Link>
+        </Typography>
+         <Typography display={'inline'}>
+          <Link
+            href="https://www.facebook.com/profile.php?id=100087395963544"
+            target="_blank"
+            underline="none">
+            <FacebookIcon sx={{ marginRight: '10px' }} fontSize="large" />
+          </Link>
+        </Typography>
           {/* <EmailIcon sx={{ margin: '15px' }} fontSize="large" /> */}
         </Grid>
       </Grid>
