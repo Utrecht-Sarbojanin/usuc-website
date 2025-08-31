@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.b4644e58.js",
+    "main.js": "/static/js/main.9e9d8f2c.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
+    "static/media/one_menu.jpg": "/static/media/one_menu.d772f655a063b1370591.jpg",
     "static/media/cover_home.jpg": "/static/media/cover_home.b6ce1e8764b18a193c76.jpg",
     "static/media/gallery_(1).jpg": "/static/media/gallery_(1).7338b34204ba0909cc4f.jpg",
     "static/media/gallery_(20).jpg": "/static/media/gallery_(20).bf1f18727681e96d94d5.jpg",
@@ -42,11 +43,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.b4644e58.js.map": "/static/js/main.b4644e58.js.map",
+    "main.9e9d8f2c.js.map": "/static/js/main.9e9d8f2c.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.b4644e58.js"
+    "static/js/main.9e9d8f2c.js"
   ]
 }
