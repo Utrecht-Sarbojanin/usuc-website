@@ -1,4 +1,12 @@
-import { Grid, Typography, Card, CardMedia, CardContent, Link, Button } from '@mui/material';
+import {
+  Grid,
+  Typography,
+  Card,
+  CardMedia,
+  CardContent,
+  Link,
+  Button
+} from '@mui/material';
 import { PageContainer, theme } from '../PageContainer';
 import { ImageCredit } from '../ImageCredit';
 
@@ -24,22 +32,27 @@ export const Durgotsav = () => {
           <br /> As a non-profit organization funded through donations, USUC
           also actively seeks opportunities to support charitable causes. In
           2025, one of our most anticipated events will be the Utrecht
-          Sarbojanin Durgotsav, taking place from <i>September 27 to October 1, 2025</i> over five vibrant days.
-          <i>To register for the event, please go to the <Link
-              sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+          Sarbojanin Durgotsav, taking place from{' '}
+          <i>September 27 to October 1, 2025</i> over five vibrant days.
+          <br />
+          <Typography
+            sx={{
+              fontSize: '18px'
+            }}
+            variant="body1"
+            align="center"
+            color={'secondary'}
+            component="p">
+            <Button
+              sx={{
+                marginTop: '20px'
+              }}
+              variant="contained"
               href="/#/register">
-              registration page
-            </Link>.</i>
-          <br />
-          <br />
-          Durga Puja is an annual Hindu festival originating in the Indian
-          subcontinent. It honors the goddess Durga and commemorates her victory
-          over the shape-shifting demon Mahishasura, symbolizing the triumph of
-          good over evil. Beyond its spiritual significance, it is also
-          celebrated as a harvest festival, honoring the goddess as the
-          nurturing force behind all life and creation.
-          <br />
-          <br />
+              Regiter for Durgotsav 2025
+            </Button>
+            <br />
+          </Typography>
         </Typography>
       </Grid>
       <Grid item xs={12} lg={5}>
@@ -73,6 +86,22 @@ export const Durgotsav = () => {
           }}
           variant="body1"
           align="justify"
+          component="p">
+          Durga Puja is an annual Hindu festival originating in the Indian
+          subcontinent. It honors the goddess Durga and commemorates her victory
+          over the shape-shifting demon Mahishasura, symbolizing the triumph of
+          good over evil. Beyond its spiritual significance, it is also
+          celebrated as a harvest festival, honoring the goddess as the
+          nurturing force behind all life and creation.
+          <br />
+          <br />
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: '18px'
+          }}
+          variant="body1"
+          align="justify"
           color={'secondary'}
           component="p">
           In 2021, UNESCO recognized Durga Puja as an Intangible Cultural
@@ -89,10 +118,10 @@ export const Durgotsav = () => {
           variant="body1"
           align="justify"
           component="p">
-          Our five-day festival will be one of the largest Indian
-          international celebrations in the Netherlands. Visitors will have the
-          chance to experience the rich multicultural heritage of India and
-          engage in cultural exchanges with people from across the globe.
+          Our five-day festival will be one of the largest Indian international
+          celebrations in the Netherlands. Visitors will have the chance to
+          experience the rich multicultural heritage of India and engage in
+          cultural exchanges with people from across the globe.
           <br />
           <br /> The event will be hosted in a beautifully designed venue,
           featuring one of the largest Durga idols in mainland Europe. Guests
@@ -142,13 +171,13 @@ export const Durgotsav = () => {
           color={'secondary'}
           component="p">
           <Button
-          sx={{
-            marginTop: '20px'
-          }}
-          variant="contained"
-          href="/#/donate">
-          Be a patron of the event
-        </Button>
+            sx={{
+              marginTop: '20px'
+            }}
+            variant="contained"
+            href="/#/donate">
+            Be a patron of the event
+          </Button>
         </Typography>
       </Grid>
     </PageContainer>
