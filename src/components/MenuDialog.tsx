@@ -16,6 +16,7 @@ export const theme: Theme = createTheme(themeOptions);
 
 export const MenuDialog = (props: any) => {
   const ticket: Ticket = props.ticket;
+  const isUnifiedMenu = true;
 
   return (
     <Dialog
@@ -26,7 +27,11 @@ export const MenuDialog = (props: any) => {
       aria-labelledby="scroll-dialog-title"
       aria-describedby="scroll-dialog-description">
       <DialogTitle id="scroll-dialog-title">
-        {ticket.menu !== undefined ? ticket.menu.title : ''}
+        {ticket.menu !== undefined
+          ? isUnifiedMenu
+            ? 'Full Event Menu'
+            : ticket.menu.title
+          : ''}
       </DialogTitle>
       <DialogContent
         dividers={true}
@@ -68,14 +73,18 @@ export const MenuDialog = (props: any) => {
           onClick={props.handleClose}>
           Cancel
         </Button>
-        <Button
-          sx={{ marginLeft: '5px', marginRight: '5px' }}
-          variant={'contained'}
-          color={'secondary'}
-          href={ticket.link}
-          target="_blank">
-          Book Now
-        </Button>
+        {isUnifiedMenu ? (
+          ''
+        ) : (
+          <Button
+            sx={{ marginLeft: '5px', marginRight: '5px' }}
+            variant={'contained'}
+            color={'secondary'}
+            href={ticket.link}
+            target="_blank">
+            Book Now
+          </Button>
+        )}
       </DialogActions>
     </Dialog>
   );

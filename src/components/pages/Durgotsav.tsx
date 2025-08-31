@@ -4,7 +4,6 @@ import {
   Card,
   CardMedia,
   CardContent,
-  Link,
   Button
 } from '@mui/material';
 import { PageContainer, theme } from '../PageContainer';
