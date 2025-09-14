@@ -16,7 +16,7 @@ export const theme: Theme = createTheme(themeOptions);
 
 export const MenuDialog = (props: any) => {
   const ticket: Ticket = props.ticket;
-  const isUnifiedMenu = true;
+  const isUnifiedMenu = false;
 
   return (
     <Dialog
