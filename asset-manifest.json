@@ -1,17 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.9e9d8f2c.js",
+    "main.js": "/static/js/main.df0519b6.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/one_menu.jpg": "/static/media/one_menu.d772f655a063b1370591.jpg",
     "static/media/cover_home.jpg": "/static/media/cover_home.b6ce1e8764b18a193c76.jpg",
     "static/media/gallery_(1).jpg": "/static/media/gallery_(1).7338b34204ba0909cc4f.jpg",
     "static/media/gallery_(20).jpg": "/static/media/gallery_(20).bf1f18727681e96d94d5.jpg",
-    "static/media/boishakhi_dinner_veg.jpeg": "/static/media/boishakhi_dinner_veg.f7461d651cfa77ba6d8d.jpeg",
-    "static/media/boishakhi_dinner_non-veg.jpeg": "/static/media/boishakhi_dinner_non-veg.7a38a4eb21990db155f1.jpeg",
     "static/media/gallery_(6).jpg": "/static/media/gallery_(6).9c1493866aa269bc1860.jpg",
+    "static/media/nabami_lunch.jpg": "/static/media/nabami_lunch.ef752a7f6d8f093a7c12.jpg",
+    "static/media/dashami_dinner.jpg": "/static/media/dashami_dinner.2d536863a70919d49f1e.jpg",
+    "static/media/saptami_dinner.jpg": "/static/media/saptami_dinner.7f3c24eaca39511a61a7.jpg",
     "static/media/gallery_(14).jpg": "/static/media/gallery_(14).280a9578b6338d4392cf.jpg",
+    "static/media/shashthi_lunch.jpg": "/static/media/shashthi_lunch.c5355779d6068e1414ea.jpg",
+    "static/media/ashtami_dinner.jpg": "/static/media/ashtami_dinner.66bc3386d0c2ed2847dc.jpg",
+    "static/media/shashthi_dinner.jpg": "/static/media/shashthi_dinner.1679b94ae2ef421ead78.jpg",
+    "static/media/panchami_dinner.jpg": "/static/media/panchami_dinner.5d31f94dccbb2874a361.jpg",
+    "static/media/saptami_lunch.jpg": "/static/media/saptami_lunch.357b94373da0cb714b7c.jpg",
+    "static/media/ashtami_lunch.jpg": "/static/media/ashtami_lunch.0096e8c58c3f6c026f3f.jpg",
     "static/media/gallery_(21).jpg": "/static/media/gallery_(21).15c3ed967be6b1bbc97b.jpg",
     "static/media/gallery_(2).jpg": "/static/media/gallery_(2).fd4fdaeb98fad99671d2.jpg",
     "static/media/gallery_(10).jpg": "/static/media/gallery_(10).66dbb62d096ae8ee569e.jpg",
@@ -43,11 +50,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.9e9d8f2c.js.map": "/static/js/main.9e9d8f2c.js.map",
+    "main.df0519b6.js.map": "/static/js/main.df0519b6.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.9e9d8f2c.js"
+    "static/js/main.df0519b6.js"
   ]
 }
