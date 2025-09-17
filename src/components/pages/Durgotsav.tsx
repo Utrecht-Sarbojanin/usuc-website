@@ -48,7 +48,7 @@ export const Durgotsav = () => {
               }}
               variant="contained"
               href="/#/register">
-              Regiter for Durgotsav 2025
+              Register for Durgotsav 2025
             </Button>
             <br />
           </Typography>
