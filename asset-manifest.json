@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.b1b1efd0.js",
+    "main.js": "/static/js/main.58a57217.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/one_menu.jpg": "/static/media/one_menu.d772f655a063b1370591.jpg",
@@ -31,7 +31,7 @@
     "static/media/gallery_(13).jpg": "/static/media/gallery_(13).fae24dcd50a9f9b4b997.jpg",
     "static/media/sindur.jpg": "/static/media/sindur.1e3cdbbf2736dbcefc39.jpg",
     "static/media/gallery_(4).jpg": "/static/media/gallery_(4).8888cf0d0a03be0e485d.jpg",
-    "static/media/cov_dandiya.jpg": "/static/media/cov_dandiya.dd75439f7c54392ab645.jpg",
+    "static/media/cov_dandiya.jpg": "/static/media/cov_dandiya.5d526d27e5ac18193ca6.jpg",
     "static/media/gallery_(17).jpg": "/static/media/gallery_(17).758d61cd50673d403c87.jpg",
     "static/media/gallery_(3).jpg": "/static/media/gallery_(3).377373e55f5573d2a696.jpg",
     "static/media/gallery_(15).jpg": "/static/media/gallery_(15).9c8fced34f8a4f25574e.jpg",
@@ -50,11 +50,11 @@
     "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.b1b1efd0.js.map": "/static/js/main.b1b1efd0.js.map",
+    "main.58a57217.js.map": "/static/js/main.58a57217.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.b1b1efd0.js"
+    "static/js/main.58a57217.js"
   ]
 }
