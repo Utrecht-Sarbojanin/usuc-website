@@ -78,7 +78,7 @@ const ticketList: USUCSponsor[] = [
     addressLine1: 'Beeklaan 151, 2562 AD, Den Haag',
     addressLine2: '',
     addressLine3: '',
-    website: 'https://www.swiftrinity.com'
+    website: 'https://sunderban.nl'
   },
 
   {
