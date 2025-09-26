@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.42c668b4.js",
+    "main.js": "/static/js/main.a15438ee.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
     "static/media/one_menu.jpg": "/static/media/one_menu.d772f655a063b1370591.jpg",
@@ -52,16 +52,17 @@
     "static/media/cov_swiftrinity.jpg": "/static/media/cov_swiftrinity.e6b124072d484ee07f6d.jpg",
     "static/media/cov_madras.jpg": "/static/media/cov_madras.c39944f9d54d6565e077.jpg",
     "static/media/usuc_logo.png": "/static/media/usuc_logo.9094592608d0d9ce1a25.png",
+    "static/media/cov_folkyr.jpg": "/static/media/cov_folkyr.cd72f3cc92174a68b069.jpg",
     "static/media/cov_panjab.jpg": "/static/media/cov_panjab.3a49ce2b1ea88161eb7f.jpg",
     "static/media/cov_hypotheek_vitaal.jpg": "/static/media/cov_hypotheek_vitaal.e2a3cfc976df5377f6d0.jpg",
     "static/media/cov_default.jpg": "/static/media/cov_default.f0e0e79c4f62511c0786.jpg",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.42c668b4.js.map": "/static/js/main.42c668b4.js.map",
+    "main.a15438ee.js.map": "/static/js/main.a15438ee.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.42c668b4.js"
+    "static/js/main.a15438ee.js"
   ]
 }
