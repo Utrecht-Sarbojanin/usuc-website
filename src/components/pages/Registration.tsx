@@ -10,7 +10,7 @@ export const Registration = () => {
   const isEventPlanned = true;
   const eventData = DURGOTSAV_2025;
   const isMenuAvailable = false;
-  const isEventScheduleAvailable = false;
+  const isEventScheduleAvailable = true;
 
   const [menuDialogOpen, setMenuDialogOpen] = useState(false);
 

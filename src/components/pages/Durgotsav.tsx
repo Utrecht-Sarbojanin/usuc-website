@@ -127,8 +127,27 @@ export const Durgotsav = () => {
           can look forward to a diverse program of cultural performances, art,
           music, and community activities — making this an unforgettable
           celebration for all. <br />
+          
+          <Typography
+            sx={{
+              fontSize: '18px'
+            }}
+            variant="body1"
+            align="center"
+            color={'secondary'}
+            component="p">
+            <Button
+              sx={{
+                marginTop: '20px'
+              }}
+              variant="contained"
+              href="/#/event-schedule">
+              View Schedule for Durgotsav 2025
+            </Button>
+            <br />
+          </Typography>
           <br />
-          <br />
+          
           We are cordially inviting everyone to join us and celebrate this great
           Indian International Festival - Utrecht Sarbojanin Durgotsav 2025.
           <br />

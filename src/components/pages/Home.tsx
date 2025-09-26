@@ -228,7 +228,6 @@ const NavigationButtons = () => {
       justifyContent="center"
       alignItems="center"
       xs={12}>
-  
       <Grid sx={{ padding: '10px' }} item xs={12}>
         <Button
           fullWidth
@@ -245,16 +244,6 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('contact');
-          }}>
-          Contact
-        </Button>
-      </Grid>
-      <Grid sx={{ padding: '10px' }} item xs={6}>
-        <Button
-          fullWidth
-          variant="contained"
-          onClick={() => {
             navigateTo('donate');
           }}>
           Donate
@@ -265,9 +254,9 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('gallery');
+            navigateTo('sponsors');
           }}>
-          Gallery
+          Sponsors
         </Button>
       </Grid>
       <Grid sx={{ padding: '10px' }} item xs={6}>
@@ -278,6 +267,16 @@ const NavigationButtons = () => {
             navigateTo('about');
           }}>
           About Us
+        </Button>
+      </Grid>
+      <Grid sx={{ padding: '10px' }} item xs={6}>
+        <Button
+          fullWidth
+          variant="contained"
+          onClick={() => {
+            navigateTo('contact');
+          }}>
+          Contact
         </Button>
       </Grid>
     </Grid>
@@ -345,6 +344,11 @@ const BottomCards = () => {
             specialTitle={true}
             buttons={[
               { text: 'Register', target: 'register', type: 'secondary' },
+              {
+                text: 'View Schedule',
+                target: 'event-schedule',
+                type: 'outlined'
+              }
             ]}>
             <Line>{'Durga Pujo'}</Line>
             <Line>{'27 September - 1 October 2025'}</Line>

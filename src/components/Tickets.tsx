@@ -80,6 +80,16 @@ const ticketList: Ticket[] = [
     link: 'https://usuc.yapsody.com/event/book/853095/31765565'
   },
   {
+    type: 'dandiya',
+    title: 'Dandiya Night Pass',
+    date: '30 September, 2025',
+    menu: {
+      title: 'Dashami Menu',
+      menuImages: []
+    },
+    link: 'https://usuc.yapsody.com/event/book/853095/31765565'
+  },
+  {
     type: 'nabami',
     title: 'Nabami Pass',
     date: '1 October, 2025',

@@ -1,6 +1,8 @@
 export interface USUCEvent {
   name: string;
   date: string;
+  start?: string;
+  end?: string;
   time?: string;
   venue?:string;
   activities?: String[];

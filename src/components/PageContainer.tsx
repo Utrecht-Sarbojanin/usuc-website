@@ -42,6 +42,8 @@ export const PageContainer = (props: any) => {
         return <HomeIcon />;
       case 'Durgotsav 2025':
         return <FavoriteIcon />;
+        case 'Sponsors':
+        return <FavoriteIcon />;
       case 'Brochure':
         return <MenuBookIcon />;
       case 'Registration':
@@ -164,6 +166,7 @@ export const PageContainer = (props: any) => {
             { name: 'Durgotsav 2025', link: 'durgotsav2025' },
             { name: 'Brochure', link: '' },
             { name: 'Gallery', link: 'gallery' },
+            { name: 'Sponsors', link: 'sponsors' },
             // { name: 'Registration', link: 'register' },
             { name: 'Contact', link: 'contact' },
             { name: 'Donate', link: 'donate' },

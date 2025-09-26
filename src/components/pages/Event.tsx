@@ -14,12 +14,82 @@ import { PageContainer, theme } from '../PageContainer';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import { USUCEvent } from '../../models/USUCEvent';
 
-const eventsSchedule: USUCEvent[] = [
+const eventsSchedule: USUCEvent[] = [{
+    name: 'Maha Panchami',
+    date: 'September 27, 2025',
+    activities: [
+      '17:04 CET Billa Nimantran',
+      '17:30 CET Sondha Arati',
+      '18:00 CET Cultural events',
+      '20:00 CET Dinner'
+    ],
+    registrationLink: 'https://usuc.yapsody.com/event/book/853089/31765559'
+  },{
+    name: 'Maha Shashthi',
+    date: 'September 28, 2025',
+    activities: [
+      '09:00 CET Kalparambha & Akal Bodhon',
+      '13:00 CET Lunch',
+      '16:00 CET Amantran and Adhibas',
+      '17:30 CET Sondha Arati',
+      '18:00 CET Cultural events',
+      '20:00 CET Dinner'
+    ],
+    registrationLink: 'https://usuc.yapsody.com/event/book/853091/31765561'
+  },
+  {
+    name: 'Maha Saptami',
+    date: 'September 29, 2025',
+    activities: [
+      '09:00 CET Naba Patrika Snan',
+      '13:00 CET Lunch',
+      '17:30 CET Sondha Arati',
+      '18:00 CET Cultural events',
+      '20:00 CET Dinner'
+    ],
+    registrationLink: 'https://usuc.yapsody.com/event/book/853093/31765563'
+  },
+  {
+    name: 'Maha Ashtami',
+    date: 'September 30, 2025',
+    activities: [
+      '08:30 CET Maha Ashtami Puja',
+      '11:30 CET Maha Ashtami Pushpanjali',
+      '13:00 CET Lunch',
+      '14:12 CET Sandhi Puja',
+      '17:30 CET Sondha Arati',
+      '18:00 CET Cultural events',
+      '19:00 CET Dandiya Night',
+      '20:00 CET Dinner'
+    ],
+    registrationLink: 'https://usuc.yapsody.com/event/book/853095/31765565'
+  },
+  {
+    name: 'Maha Nabami',
+    date: 'October 1, 2025',
+    activities: [
+      '08:30 CET Maha Nabami Puja',
+      '12:30 CET Maha Nabami Pushpanjali',
+      '13:00 CET Lunch',
+      '14:00 CET Maha Nabami Hom/Yajna'
+    ],
+    registrationLink: 'https://usuc.yapsody.com/event/book/853097/31765567'
+  },
+  {
+    name: 'Bijoya Dashami',
+    date: 'October 1, 2025',
+    activities: [
+      '15:30 CET Dashami Puja',
+      '18:00 CET Debi Bodhon & Sindoor Khela',
+      '19:00 CET Dinner'
+    ],
+    registrationLink: 'https://usuc.yapsody.com/event/book/853099/31765569'
+  }
 ];
 
 export const Event = () => {
   return (
-    <PageContainer title="Durga Puja 2024 Schedule">
+    <PageContainer title="Durga Puja 2025 Schedule">
       <Grid item xs={15}>
         <Typography
           sx={{
@@ -119,8 +189,8 @@ const DaywiseEvent = (props: any) => {
 
 const EventItem = (props: any) => {
   const item: string = props.item;
-  const time = item.substring(0, 5);
-  const description = item.substring(5);
+  const time = item.substring(0, 9);
+  const description = item.substring(9);
 
   return (
     <ListItem>
