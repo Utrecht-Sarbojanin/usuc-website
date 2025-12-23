@@ -299,7 +299,7 @@ const BottomCards = () => {
               {'Sarbojanin ['}
               <Link
                 sx={{ textDecoration: 'none', color: '#c0c0c0' }}
-                href="http://ipa-reader.xyz/?text=%CA%83arbo%C9%9Fonin"
+                href="https://ipa-reader.com/?text=%CA%83arbo%C9%9Fonin"
                 target="_blank"
                 rel="noopener">
                 ʃarboɟonin
@@ -343,7 +343,7 @@ const BottomCards = () => {
             title={'USUC Durgotsav 2025'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'secondary' },
+              { text: 'Register', target: 'register', type: 'secondary', disabled: true },
               {
                 text: 'View Schedule',
                 target: 'event-schedule',

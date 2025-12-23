@@ -47,7 +47,8 @@ export const Durgotsav = () => {
                 marginTop: '20px'
               }}
               variant="contained"
-              href="/#/register">
+              href="/#/register"
+              disabled>
               Register for Durgotsav 2025
             </Button>
             <br />

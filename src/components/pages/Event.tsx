@@ -23,7 +23,7 @@ const eventsSchedule: USUCEvent[] = [{
       '18:00 CET Cultural events',
       '20:00 CET Dinner'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/853089/31765559'
+    // registrationLink: 'https://usuc.yapsody.com/event/book/853089/31765559'
   },{
     name: 'Maha Shashthi',
     date: 'September 28, 2025',
@@ -35,7 +35,7 @@ const eventsSchedule: USUCEvent[] = [{
       '18:00 CET Cultural events',
       '20:00 CET Dinner'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/853091/31765561'
+    // registrationLink: 'https://usuc.yapsody.com/event/book/853091/31765561'
   },
   {
     name: 'Maha Saptami',
@@ -47,7 +47,7 @@ const eventsSchedule: USUCEvent[] = [{
       '18:00 CET Cultural events',
       '20:00 CET Dinner'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/853093/31765563'
+    // registrationLink: 'https://usuc.yapsody.com/event/book/853093/31765563'
   },
   {
     name: 'Maha Ashtami',
@@ -62,7 +62,7 @@ const eventsSchedule: USUCEvent[] = [{
       '19:00 CET Dandiya Night',
       '20:00 CET Dinner'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/853095/31765565'
+    // registrationLink: 'https://usuc.yapsody.com/event/book/853095/31765565'
   },
   {
     name: 'Maha Nabami',
@@ -73,7 +73,7 @@ const eventsSchedule: USUCEvent[] = [{
       '13:00 CET Lunch',
       '14:00 CET Maha Nabami Hom/Yajna'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/853097/31765567'
+    // registrationLink: 'https://usuc.yapsody.com/event/book/853097/31765567'
   },
   {
     name: 'Bijoya Dashami',
@@ -83,7 +83,7 @@ const eventsSchedule: USUCEvent[] = [{
       '18:00 CET Debi Bodhon & Sindoor Khela',
       '19:00 CET Dinner'
     ],
-    registrationLink: 'https://usuc.yapsody.com/event/book/853099/31765569'
+    // registrationLink: 'https://usuc.yapsody.com/event/book/853099/31765569'
   }
 ];
 
@@ -107,7 +107,7 @@ export const Event = () => {
       <Grid item xs={12}>
         <DaywiseEvents />
       </Grid>
-      <Grid item xs={15}>
+      {/* <Grid item xs={15}>
         <Typography
           sx={{
             fontSize: '18px'
@@ -127,7 +127,7 @@ export const Event = () => {
             </Link>
           </b>
         </Typography>
-      </Grid>
+      </Grid> */}
     </PageContainer>
   );
 };
@@ -171,7 +171,7 @@ const DaywiseEvent = (props: any) => {
             ))}
           </List>
         </CardContent>
-        <CardActions>
+        {event.registrationLink? (<CardActions>
           <Button
             sx={{ marginLeft: '5px', marginRight: '5px' }}
             fullWidth
@@ -181,7 +181,7 @@ const DaywiseEvent = (props: any) => {
             target="_blank">
             Register Now*
           </Button>
-        </CardActions>
+        </CardActions>) : ('')}
       </Card>
     </Grid>
   );

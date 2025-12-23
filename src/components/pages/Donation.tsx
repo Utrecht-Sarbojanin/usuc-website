@@ -1,4 +1,4 @@
-import { Button, Chip, Grid, Typography } from '@mui/material';
+import { Button, Chip, Grid, Link, Typography } from '@mui/material';
 import { PageContainer } from '../PageContainer';
 import { DonationCategory } from '../../models/DonationCategory';
 
@@ -185,7 +185,10 @@ export const Donation = () => {
           align="left"
           component="p">
           If you have any questions, please do not hesitate to contact us via
-          email at: <b>info@utrechtsarbojanin.nl</b>
+          email at: <Link
+        sx={{ textDecoration: 'none', color: '#c0c0c0' }}
+        href="mailto:info@utrechtsarbojanin.nl">info@utrechtsarbojanin.nl
+      </Link> 
         </Typography>
       </Grid>
     </PageContainer>

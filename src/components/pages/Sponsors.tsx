@@ -27,7 +27,7 @@ export const Sponsor = () => {
             component="p">
             We are deeply grateful to our sponsors and stall partners for their generous support in making Durgotsav 2025 a grand success. Their contributions have been instrumental in helping us celebrate our cultural heritage and foster community spirit. We encourage you to explore and support these wonderful businesses that stand with us in our journey.
             <br /><br />
-            If you or your organization would like to become a sponsor or stall partner for our future events, please reach out to us at <Link
+            If you or your organization would like to become a sponsor or stall partner for our future events, please reach out to us at: <Link
         sx={{ textDecoration: 'none', color: '#c0c0c0' }}
         href="mailto:info@utrechtsarbojanin.nl">
         info@utrechtsarbojanin.nl .

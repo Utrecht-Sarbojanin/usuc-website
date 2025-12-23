@@ -7,7 +7,7 @@ import { DURGOTSAV_2025 } from '../../models/USUCEvent';
 import { Tickets } from '../Tickets';
 
 export const Registration = () => {
-  const isEventPlanned = true;
+  const isEventPlanned = false;
   const eventData = DURGOTSAV_2025;
   const isMenuAvailable = false;
   const isEventScheduleAvailable = true;
@@ -39,7 +39,7 @@ export const Registration = () => {
             variant="body1"
             align="center"
             component="p">
-            No upcoming event planned. Please come back later.
+            The event has eneded. No upcoming event planned. Please come back later.
             <br />
             <br />
           </Typography>
