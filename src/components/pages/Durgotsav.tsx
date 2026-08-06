@@ -11,7 +11,7 @@ import { ImageCredit } from '../ImageCredit';
 
 export const Durgotsav = () => {
   return (
-    <PageContainer title={'Durgotsav 2025'}>
+    <PageContainer title={'Durgotsav 2026'}>
       <Grid item xs={12} lg={7}>
         <Typography variant="h6" align="left">
           Building Cultural Bridges Through Celebration
@@ -32,7 +32,7 @@ export const Durgotsav = () => {
           also actively seeks opportunities to support charitable causes. In
           2025, one of our most anticipated events will be the Utrecht
           Sarbojanin Durgotsav, taking place from{' '}
-          <i>September 27 to October 1, 2025</i> over five vibrant days.
+          <i>October 16 to October 20, 2026</i> over five vibrant days.
           <br />
           <Typography
             sx={{
@@ -48,8 +48,8 @@ export const Durgotsav = () => {
               }}
               variant="contained"
               href="/#/register"
-              disabled>
-              Register for Durgotsav 2025
+              >
+              Register for Durgotsav 2026
             </Button>
             <br />
           </Typography>
@@ -137,7 +137,7 @@ export const Durgotsav = () => {
             align="center"
             color={'secondary'}
             component="p">
-            <Button
+            {/* <Button
               sx={{
                 marginTop: '20px'
               }}
@@ -145,7 +145,7 @@ export const Durgotsav = () => {
               href="/#/event-schedule">
               View Schedule for Durgotsav 2025
             </Button>
-            <br />
+            <br /> */}
           </Typography>
           <br />
           
@@ -177,7 +177,7 @@ export const Durgotsav = () => {
           color={'secondary'}
           component="p">
           <b>Date:</b> <br />
-          September 27 to October 1, 2025
+          October 16 to October 20, 2026
           <br />
           <br />
         </Typography>

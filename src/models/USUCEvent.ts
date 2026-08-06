@@ -16,9 +16,9 @@ export const EMPTY_EVENT: USUCEvent = {
   venue: ''
 };
 
-export const DURGOTSAV_2025: USUCEvent = {
-  name: 'Durgotsav 2025',
-  date: '27 September - 1 October, 2025',
+export const DURGOTSAV_2026: USUCEvent = {
+  name: 'Durgotsav 2026',
+  date: '16 October - 20 October, 2026',
   time: '',
   venue: 'ZIMIHC Theater Stefanus - Braziliëdreef 2, 3563 CK, Utrecht, Netherlands'
 };

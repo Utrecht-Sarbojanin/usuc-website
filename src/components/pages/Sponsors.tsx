@@ -1,5 +1,5 @@
 import { PageContainer, theme } from '../PageContainer';
-import { DURGOTSAV_2025 } from '../../models/USUCEvent';
+import { DURGOTSAV_2026 } from '../../models/USUCEvent';
 import {
   Button,
   Card,
@@ -14,7 +14,7 @@ import {
 import { USUCSponsor } from '../../models/Sponsor';
 
 export const Sponsor = () => {
-  const eventData = DURGOTSAV_2025;
+  const eventData = DURGOTSAV_2026;
 
   return (
     <PageContainer title={`Sponsors for ${eventData.name}`}>

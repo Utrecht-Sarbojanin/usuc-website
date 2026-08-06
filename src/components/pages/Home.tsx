@@ -235,7 +235,7 @@ const NavigationButtons = () => {
           onClick={() => {
             navigateTo('durgotsav2025');
           }}>
-          Durgotsav 2025
+          Durgotsav 2026
         </Button>
       </Grid>
 
@@ -340,18 +340,18 @@ const BottomCards = () => {
           </InfoCard> */}
         {isDurgotsavEnabled ? (
           <InfoCard
-            title={'USUC Durgotsav 2025'}
+            title={'USUC Durgotsav 2026'}
             specialTitle={true}
             buttons={[
-              { text: 'Register', target: 'register', type: 'secondary', disabled: true },
-              {
-                text: 'View Schedule',
-                target: 'event-schedule',
-                type: 'outlined'
-              }
+              { text: 'Register', target: 'register', type: 'secondary'},
+              // {
+              //   text: 'View Schedule',
+              //   target: 'event-schedule',
+              //   type: 'outlined'
+              // }
             ]}>
             <Line>{'Durga Pujo'}</Line>
-            <Line>{'27 September - 1 October 2025'}</Line>
+            <Line>{'16 October - 20 October 2026'}</Line>
           </InfoCard>
         ) : (
           ''

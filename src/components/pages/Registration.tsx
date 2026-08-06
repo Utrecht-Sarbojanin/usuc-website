@@ -3,14 +3,14 @@ import { PageContainer } from '../PageContainer';
 import { useState } from 'react';
 import { MenuDialog } from '../MenuDialog';
 import { EMPTY_TICKET, Ticket } from '../../models/Ticket';
-import { DURGOTSAV_2025 } from '../../models/USUCEvent';
+import { DURGOTSAV_2026 } from '../../models/USUCEvent';
 import { Tickets } from '../Tickets';
 
 export const Registration = () => {
-  const isEventPlanned = false;
-  const eventData = DURGOTSAV_2025;
+  const isEventPlanned = true;
+  const eventData = DURGOTSAV_2026;
   const isMenuAvailable = false;
-  const isEventScheduleAvailable = true;
+  const isEventScheduleAvailable = false;
 
   const [menuDialogOpen, setMenuDialogOpen] = useState(false);
 
@@ -62,7 +62,7 @@ export const Registration = () => {
             <br />
             {isEventScheduleAvailable ? (
               <b>
-                For detailed schedule of Durga Puja 2023 : Click{' '}
+                For detailed schedule of Durga Puja 2026 : Click{' '}
                 <Link
                   sx={{ textDecoration: 'none', color: '#c0c0c0' }}
                   href="/#/event-schedule">

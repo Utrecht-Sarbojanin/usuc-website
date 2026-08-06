@@ -40,7 +40,7 @@ export const PageContainer = (props: any) => {
     switch (item) {
       case 'Home':
         return <HomeIcon />;
-      case 'Durgotsav 2025':
+      case 'Durgotsav 2026':
         return <FavoriteIcon />;
         case 'Sponsors':
         return <FavoriteIcon />;
@@ -163,7 +163,7 @@ export const PageContainer = (props: any) => {
         <List>
           {[
             { name: 'Home', link: '' },
-            { name: 'Durgotsav 2025', link: 'durgotsav2025' },
+            { name: 'Durgotsav 2026', link: 'durgotsav2026' },
             { name: 'Brochure', link: '' },
             { name: 'Gallery', link: 'gallery' },
             { name: 'Sponsors', link: 'sponsors' },
