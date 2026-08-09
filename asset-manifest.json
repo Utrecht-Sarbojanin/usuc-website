@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.026b1dc5.css",
-    "main.js": "/static/js/main.48560b16.js",
+    "main.js": "/static/js/main.26aaf049.js",
     "static/js/787.a85767d5.chunk.js": "/static/js/787.a85767d5.chunk.js",
     "static/media/utrecht_tower.png": "/static/media/utrecht_tower.c3430adee9314ba802a8.png",
-    "static/media/one_menu.jpg": "/static/media/one_menu.d772f655a063b1370591.jpg",
     "static/media/cover_home.jpg": "/static/media/cover_home.b6ce1e8764b18a193c76.jpg",
     "static/media/gallery_(1).jpg": "/static/media/gallery_(1).7338b34204ba0909cc4f.jpg",
     "static/media/gallery_(20).jpg": "/static/media/gallery_(20).bf1f18727681e96d94d5.jpg",
     "static/media/gallery_(6).jpg": "/static/media/gallery_(6).9c1493866aa269bc1860.jpg",
-    "static/media/nabami_lunch_1.jpg": "/static/media/nabami_lunch_1.ef752a7f6d8f093a7c12.jpg",
     "static/media/ashtami_lunch.jpg": "/static/media/ashtami_lunch.2ccc7185231685554f69.jpg",
     "static/media/ashtami_dinner.jpg": "/static/media/ashtami_dinner.90b79d6356de016c15db.jpg",
     "static/media/shashthi_dinner.jpg": "/static/media/shashthi_dinner.e7a8031f5d141b04a2c3.jpg",
@@ -19,15 +17,7 @@
     "static/media/dashami_lunch.jpg": "/static/media/dashami_lunch.937fb6169423261bfc5c.jpg",
     "static/media/saptami_lunch.jpg": "/static/media/saptami_lunch.4fe38bd37d781a554332.jpg",
     "static/media/nabami_lunch.jpg": "/static/media/nabami_lunch.1e313e30b135114d48f3.jpg",
-    "static/media/dashami_dinner_1.jpg": "/static/media/dashami_dinner_1.2d536863a70919d49f1e.jpg",
-    "static/media/saptami_dinner_1.jpg": "/static/media/saptami_dinner_1.7f3c24eaca39511a61a7.jpg",
     "static/media/gallery_(14).jpg": "/static/media/gallery_(14).280a9578b6338d4392cf.jpg",
-    "static/media/shashthi_lunch.jpg": "/static/media/shashthi_lunch.c5355779d6068e1414ea.jpg",
-    "static/media/ashtami_dinner_1.jpg": "/static/media/ashtami_dinner_1.66bc3386d0c2ed2847dc.jpg",
-    "static/media/shashthi_dinner_1.jpg": "/static/media/shashthi_dinner_1.1679b94ae2ef421ead78.jpg",
-    "static/media/panchami_dinner.jpg": "/static/media/panchami_dinner.5d31f94dccbb2874a361.jpg",
-    "static/media/saptami_lunch_1.jpg": "/static/media/saptami_lunch_1.357b94373da0cb714b7c.jpg",
-    "static/media/ashtami_lunch_1.jpg": "/static/media/ashtami_lunch_1.0096e8c58c3f6c026f3f.jpg",
     "static/media/gallery_(21).jpg": "/static/media/gallery_(21).15c3ed967be6b1bbc97b.jpg",
     "static/media/gallery_(2).jpg": "/static/media/gallery_(2).fd4fdaeb98fad99671d2.jpg",
     "static/media/gallery_(10).jpg": "/static/media/gallery_(10).66dbb62d096ae8ee569e.jpg",
@@ -68,11 +58,11 @@
     "static/media/cov_default.jpg": "/static/media/cov_default.f0e0e79c4f62511c0786.jpg",
     "index.html": "/index.html",
     "main.026b1dc5.css.map": "/static/css/main.026b1dc5.css.map",
-    "main.48560b16.js.map": "/static/js/main.48560b16.js.map",
+    "main.26aaf049.js.map": "/static/js/main.26aaf049.js.map",
     "787.a85767d5.chunk.js.map": "/static/js/787.a85767d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.026b1dc5.css",
-    "static/js/main.48560b16.js"
+    "static/js/main.26aaf049.js"
   ]
 }
