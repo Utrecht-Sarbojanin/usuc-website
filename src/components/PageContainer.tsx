@@ -76,7 +76,7 @@ export const PageContainer = (props: any) => {
       <ListItem key={props.item.name} disablePadding>
         {props.item.name === 'Brochure' ? (
           <ListItemButton
-            href="https://drive.google.com/file/d/1ERiea_AFTOr-qQjicjpCzk-cpQZ4oPDu/view?usp=sharing"
+            href="https://drive.google.com/file/d/1QRKogQqCqiFuHZsT6olNjAWtEE4ixH1R/view?usp=drivesdk"
             target="_blank">
             {getIcon(props.item.name)}
             <ListItemText

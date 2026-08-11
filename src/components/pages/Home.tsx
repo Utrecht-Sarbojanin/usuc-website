@@ -233,7 +233,7 @@ const NavigationButtons = () => {
           fullWidth
           variant="contained"
           onClick={() => {
-            navigateTo('durgotsav2025');
+            navigateTo('durgotsav2026');
           }}>
           Durgotsav 2026
         </Button>
